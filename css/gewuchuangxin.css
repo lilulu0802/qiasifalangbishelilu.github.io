@@ -1,0 +1,454 @@
+h1 {
+    font-family: 宋体;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 330px;
+    width: 100vw;
+    background-image: url(../images/文创周边/header.png);
+    background-size: cover;
+}
+
+.header-top {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    letter-spacing: 5px;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    padding: 0 100px;
+    background-color: rgba(3, 3, 3, 0.3);
+}
+
+.header-top-l {
+    line-height: 70px;
+}
+
+.header-top img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    margin: 0 20px;
+}
+
+header hr {
+    width: 100%;
+    height: 1px;
+    color: #333;
+    opacity: 0.2;
+    z-index: 3;
+    position: absolute;
+    top: 70px;
+}
+
+.header-top-r {
+    display: flex;
+}
+
+.header-bottom {
+    position: absolute;
+    top: 70px;
+    z-index: 3;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 5px;
+    background-color: rgba(3, 3, 3, 0.3);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 120px;
+    list-style: none;
+}
+
+.li {
+    text-align: center;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.li a {
+    text-decoration: none;
+    margin: 0 auto;
+    font-family: "宋体";
+    font-weight: 800;
+    color: #fff;
+}
+
+.li:hover {
+    border-bottom: 5px solid #bb1c33;
+    cursor: pointer;
+}
+
+.li ul {
+    display: none;
+    position: relative;
+    list-style: none;
+    width: 150px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(3, 3, 3, 0.3);
+    font-size: 16px;
+}
+
+#ul a:hover {
+    color: #b80233;
+}
+
+.li:hover .u2 {
+    display: block;
+}
+
+.li:hover .u3 {
+    display: block;
+}
+
+.li:hover .u4{
+    display: block;
+}
+.li:hover .u5{
+    display: block;
+}
+
+.li:hover .u7 {
+    display: block;
+}
+
+.li:hover .u8 {
+    display: block;
+}
+
+.time-ltemp {
+    margin: 0 10px;
+    transform: translateY(-3px);
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.iconfont {
+    cursor: pointer;
+}
+
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font/font_4836137_84978jxlec7/iconfont.ttf') format('woff2'),
+        url('./font/font_4836137_84978jxlec7/iconfont.woff') format('woff'),
+        url('./font/font_4836137_84978jxlec7/iconfont.woff2') format('truetype');
+}
+
+section {
+    width: 1200px;
+    margin: 0 auto 30px;
+}
+
+section a {
+    color: #333;
+    text-decoration: none;
+    font-family: "宋体";
+    font-size: 16px;
+}
+
+section a:hover {
+    color: #b80233;
+}
+
+#searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    margin-right: 30px;
+}
+
+#searchBox {
+    width: 0;
+    padding: 0;
+    border: none;
+    transition: width 0.3s ease;
+    opacity: 0;
+    margin-left: 20px;
+    outline: none;
+}
+
+#searchBox.active {
+    width: 200px;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    opacity: 1;
+}
+
+.relative {
+    display: flex;
+}
+
+.relative {
+    cursor: pointer;
+}
+
+footer {
+    width: 100vw;
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+    background-image: url(../images/首页/底纹3.png);
+    background-size: cover;
+    color: #ede2d5;
+    padding-top: 5px;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    margin: 40px auto 0;
+}
+
+.footer-a {
+    margin: 40px auto 20px;
+    width: 555px;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #ede2d5;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: #801323;
+}
+
+.back-to-top {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 40px;
+    right: -45px;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: right 0.3s ease;
+    text-align: center;
+    font-family: 宋体;
+    font-size: 16px;
+}
+
+.back-to-top:hover {
+    right: 0;
+    background-color: #801323;
+    color: #fff;
+}
+
+.box {
+    width: 1200px;
+    margin: 0 auto;
+    height: 1100px;
+    background-image: url(../images/背景纹理03.png);
+    background-size: contain;
+    padding: 30px 40px;
+}
+
+.boxone {
+    /* padding: 30px 0; */
+    position: relative;
+    display: flex;
+    height: 460px;
+    justify-content: space-between;
+}
+
+.boxone-l {
+    width: 400px;
+    height: 400px;
+    background-color: #493131;
+    margin: 30px 0;
+}
+
+.boxone-r {
+    width: 700px;
+    height: 460px;
+    background-color: #f8f4e6;
+    padding-left: 50px;
+}
+
+.boxone-r h1 {
+    font-family: 宋体;
+    color: #493131;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.boxone-r p {
+    color: #493131;
+    text-indent: 2em;
+    line-height: 25px;
+    margin: 0 30px 10px;
+    font-size: 16px;
+    font-family: 宋体;
+}
+
+.boxone img {
+    width: 430px;
+    height: 320px;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+
+.boxtwo {
+    width: 1120px;
+    height: 400px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+}
+.boxtwo h1{
+    writing-mode: vertical-lr;
+    color: #493131;
+    font-size: 34px;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 100%;
+    width: 1000px;
+    height: 400px;
+}
+
+.park-item {
+    background-color: white;
+    padding: 25px 10px;
+    border-radius: 8px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 15px;
+    
+}
+
+.park-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.large-item {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 100%;
+    font-size: 22px;
+    background-image: url(../images/文创周边/02.png);
+    background-size: cover;
+}
+.small-itema .img1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+}
+
+.small-itema .img2{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+}
+.small-itemb .img1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+}
+.small-itemc .img1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+}
+.small-item {
+    grid-column: 1 / 3;
+    height: 100%;
+    
+    width: 150px;
+}
+
+.container-bottom {
+    display: flex;
+}
+.small-itema{
+    margin-top: 30px;
+    /* background-color: #7a8262; */
+    background-color: #79a8a9;
+    position: relative;
+    width: 120px;
+}
+.small-itemb{
+    margin-top: -30px;
+    /* background-color: #937742; */
+    background-color: #7a8262;
+    position: relative;
+    width: 120px;
+}
+.small-itemc{
+    /* background-color: #79a8a9; */
+    /* background-color: #7a8262; */
+    background-color: #937742;
+    position: relative;
+    width: 120px;
+}
+.boxtwo h3{
+    writing-mode: vertical-lr;
+    font-family: 宋体;
+    margin: 0 auto;
+}
+.boxtwo h2{
+    width: 100px;
+    font-family: 宋体;
+    
+}

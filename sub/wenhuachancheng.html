@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文化传承</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/wenhuachancheng.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </header>
+    <section>
+        <a href="../index.html">首页</a>
+        <i>></i>
+        <a href="../sub/wenhuachancheng.html">文化传承</a>
+    </section>
+    <div class="box">
+        <h1 id="h1">传承人介绍</h1>
+        <div class="boxone">
+            <div class="container">
+                <div class="sidebar">
+                    <ul class="inheritor-list">
+                        <li class="inheritor-item active" data-target="yangyihuan">
+                            <span class="inheritor-name">张同禄</span>
+                            <span class="inheritor-type">世界珐琅艺术宗师</span>
+                        </li>
+                        <li class="inheritor-item" data-target="huxin">
+                            <span class="inheritor-name">钟连盛</span>
+                            <span class="inheritor-type">景泰蓝制作技艺代表性传承人</span>
+                        </li>
+                        <li class="inheritor-item" data-target="gaoyinxian">
+                            <span class="inheritor-name">‌邓璧玲</span>
+                            <span class="inheritor-type">景泰蓝工艺美术画手工艺人</span>
+                        </li>
+                        <li class="inheritor-item" data-target="yinianhua">
+                            <span class="inheritor-name">张 旭</span>
+                            <span class="inheritor-type">景泰蓝制作技艺代表性传承人</span>
+                        </li>
+                        <li class="inheritor-item" data-target="heyanxin">
+                            <span class="inheritor-name">谭志平</span>
+                            <span class="inheritor-type">永胜银胎掐丝珐琅传承人</span>
+                        </li>
+                        <li class="inheritor-item" data-target="humeiyue">
+                            <span class="inheritor-name">毕志勇</span>
+                            <span class="inheritor-type">掐丝冷珐琅传承人</span>
+                        </li>
+                        <li class="inheritor-item" data-target="hejinghua">
+                            <span class="inheritor-name">于刚</span>
+                            <span class="inheritor-type">掐丝珐琅釉彩技艺传承人</span>
+                        </li>
+                        <li class="inheritor-item" data-target="yiyunjuan">
+                            <span class="inheritor-name">丁明鸿</span>
+                            <span class="inheritor-type">景泰蓝技艺传承人</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <div id="yangyihuan" class="inheritor-content active">
+                        <h2 class="inheritor-title">张同禄 · 世界珐琅艺术宗师</h2>
+                        <div class="content-r">
+                            <img src="../images/文化传承/张同禄.png" alt="">
+                            <div>
+                                <p class="no-content">张同禄，男，生于1942年2月19日，祖籍河北省保定市曲阳县，现家住北京西城区西直门，
+                                    著名陶瓷制作家，从小画画就特别的好，16岁时投身景泰蓝艺术，1959年考入北京市工艺美术学校美术系，熟悉掌握景泰蓝制作流程，之后便开始在景泰蓝制作工艺上大显身手。1988年被国家轻工部授予“中国工艺美术大师”称号。
+                                    2022年12月16日5时5分，张同禄因突发心脏病抢救无效在北京不幸逝世，享年80岁。
+                                </p>
+                                <p class="no-content">
+                                    2008年，被世界手工艺理事会亚太地区评为“亚太手工艺大师”荣誉称号。
+                                <p class="no-content">
+                                    2009年，张同禄被国家授予为非物质文化遗产“景泰蓝工艺”代表性传承人之一。他设计、制作的景泰蓝工艺品多次在国内外获奖。他曾代表中国工艺美术行业参加阿曼举办的国际工艺美术交流会。
+                                </p>
+                                <p class="no-content">
+                                    2012年，由文化部中外文化交流中心、中国工艺美术学会联合主办“皇家艺术·永恒经典——张同禄70华诞纪念系列活动”，并为张同禄大师评选从艺54年来的”十大经典“作品。
+                                </p>
+                                <p class="no-content">
+                                    在50多年的艺术生涯中，他的作品清逸、新颖，超凡脱俗，造型多姿多彩，小不盈尺，大可丈余，或伟岸雄壮，或玲珑秀美，或古朴典雅，或清丽自然，以奇、巧、俏、美，自成一派，被称为“珐琅张”。
+                                </p>
+                                <p class="no-content">
+                                    在80年代初期，张同禄大师开发了“铂晶画”这一创新工艺，并申请了专利。“铂晶画”的一大特点，就是可以用来制作成装饰壁画、屏风等工艺品。</p>
+                                <p class="no-content"> 2013年12月，张同禄大师运用“铂晶画”工艺创作的作品——《锦绣前程》景泰蓝在第二届中国工艺美术收藏年会上正式发布。</p>
+                                <p class="no-content">
+                                    张同禄说：我们景泰蓝的作品大部分从自古以来到目前基本上是以器皿造型为主，也就是指我们过去器皿的造型都是对称的，能够用均衡对称来表现相应形式。</p>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="huxin" class="inheritor-content">
+                        <h2 class="inheritor-title">钟连盛 · 景泰蓝制作技艺代表性传承人</h2>
+                        <div class="content-r">
+                            <img src="../images/文化传承/钟连盛.png" alt="">
+                            <p class="no-content">
+                                钟连盛，男，1962年生，中国民建会员，大专文化，中国工艺美术大师 、北京市特级工艺美术大师、高级工艺美术师、国家级非物质文化遗产景泰蓝制作技艺代表性传承人。 北京市珐琅厂有限责任公司总工艺师 。北京市第十五届人民代表大会代表 ，中国工艺美术学会宫廷艺术专业委员会副主任。
+                            </p>
+                            <p class="no-content">
+                                钟连盛从小喜欢画画。1978年，他选择到珐琅厂创办的技校学习。从走进技校大门的那天起，钟连盛就没闲着，有空就和同学们一起去写生，一画就是一整天。在十三陵写生时，为了研究花和叶子的形态，他爬到树杈上揣摩；在门头沟斋堂写生的一个月里，他常常早起画日出。景泰蓝的制作流程复杂，从设计造型到制胎、掐丝、装点花纹、上釉色、烧制、磨光直到镀金需要多个工艺步骤、许多技师的合作。掐花瓣有个专门的名称叫“掰花克儿”。有的花瓣最前方是略微嵌进去的，或是凸出的，弧度非常小，小到只能用指甲尖使劲顶进去。为了学会这招，钟连盛常一手拿镊子，一手用指甲反复练，最后，大拇指都被挤出血了。他深知只有在熟悉了材料和工具的特性后才能更好的进行设计。掐丝镊子是专用的，市场上并无销售。钟连盛实习时配备的是铁镊子，易裂并且不够细致，影响“掰活”的效果。钟连盛做出的图案让他的掐丝师傅很满意，把自己用的钢镊子作为奖励送给了他。他的毕业作品就是用那把镊子完成的。1984年，钟连盛进入北京工艺美术职工大学工艺美术系装饰绘画专业深造。他治艺严谨，技艺全面，作品清新细腻精致、风格典雅秀美独特，在开发创作中始终倡导简约、抽象、现代的设计理念，其作品具有鲜明的现代感和时代气息。
+                            </p>
+                            <p class="no-content">
+                                作为国家级非物质文化遗产名录景泰蓝技艺的传承人，钟连盛不仅注重自己的艺术创作、工艺创新，还能从掐丝工序的纹样形象、花卉、鸟兽的结构到点蓝工序的装饰色彩的基本理论与应用等专业基础知识入手，通过组织讲座、产品评比、图纸图片、范画讲解等提高工人技师的专业知识和艺术修养，从而能够更好地表达设计师的意图，最终提高京珐牌景泰蓝的内在质量和艺术水平。
+                            </p>
+                        </div>
+                    </div>
+                    <div id="gaoyinxian" class="inheritor-content">
+                        <h2 class="inheritor-title">‌邓璧玲 · 景泰蓝工艺美术画手工艺人</h2>
+                        <div class="content-r">
+                            <img src="../images/文化传承/邓璧玲.png" alt="">
+                            <p class="no-content">
+                                ‌邓璧玲‌，1966年出生于昆明，是一位著名的景泰蓝工艺美术画手工艺人。她现任云南省工艺美术行业协会会员，并且是昆明“淼漫空间”工作室的创始人。邓璧玲的景泰蓝工艺美术画作品以其丰富的色彩和精细的图案线条而闻名，具有极强的立体效果和艺术感染力。
+                            </p>
+                            <p class="no-content">
+                                邓老师的掐丝珐琅彩画技艺师承世界华人功勋艺术家、入选中国百强非遗人物年鉴的大师李森南，其创新性地用冷处理等新工艺来替代繁复的烧制和打磨镀金等过程，将传统掐丝珐琅制作技艺和材料与现代的新型材料技术进行结合。构思、设计、图样制作，再以金属丝在画面上勾勒出线条
+                                ，用烧制打磨成粉的矿物质珐琅釉料填色，通过冷处理制成水晶瓷面，十几道工序后，一幅掐丝珐琅彩画才算制作完成，经年累月不会褪色。</p>
+                            <p class="no-content">
+                                邓璧玲在艺术生涯中取得了显著的成就。她在2015年成立了“淼漫空间”景泰蓝工艺美术画工作室，专门手工制作景泰蓝工艺美术画，并收徒传艺。她的作品曾作为国礼赠送至南非、智利、韩国等多个国家和地区，并在云南省博物馆收藏。此外，邓璧玲还获得了“一种锡材料掐丝珐琅彩画制作方法”和“具有空气净化作用的玛瑙珐琅活性炭画及其工作方法”两项发明专利。
+                            </p>
+                            <p class="no-content">
+                                在职业成就方面，邓璧玲不仅是昆明市非物质文化遗产掐丝珐琅彩画第六代传承人，还带领团队在传统工艺的基础上进行创新，创作出适应时代发展的新方式。她的团队将云南的历史名迹、少数民族多元文化等元素融入作品中，创作出一系列富有云南特色的艺术作品。此外，邓璧玲还通过开设“非遗”培训班和体验活动，推动掐丝珐琅彩画走入大众视野。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="yinianhua" class="inheritor-content">
+                        <h2 class="inheritor-title">北京非遗项目景泰蓝制作技艺代表性传承人</h2>
+                        <div class="content-r">
+                            <img src="../images/文化传承/张旭.png" alt="">
+                            <p class="no-content">
+                                张旭，中国，男，1968年5月出生于北京，北京市一级工艺美术大师，北京市非遗项目景泰蓝代表性传承人。北京市高级工艺美术师 、“珐琅张-张氏景泰蓝”传承人 、北京工美联合企业集团、北京工艺美术行业协会
+                                常务理事、北京燕京八绝协会理事、北京工艺美术学会
+                                常务理事，2022年评选为北京工艺美术“京工巧匠”称号、2015年评选为“中华人民共和国向联合国赠礼工作中，作出突出贡献的先进个人”称号。</p>
+                            <p class="no-content">
+                                张旭自幼受家父（张同禄大师）的艺术熏陶，酷爱绘画、摄影。在父亲的传授下学习了绘画和工艺美术设计。1989年曾入职北京工艺美术厂、工作期间在生产车间先后学习了景泰蓝生产制作工序的技艺。
+                            </p>
+                            <p class="no-content">
+                                在景泰蓝艺术道路上遵循张同禄大师景泰蓝艺术风格，经过多年刻苦学习景泰蓝技艺和设计，为促进非遗景泰蓝技艺和产品设计的革新，秉承着传承、创新、发展的理念，在传统与现代艺术相结合的景泰蓝创作中，不断探索现代雕塑艺术运用在景泰蓝创新造型上的完美展现，形成了自己独特的艺术风格；2012年成为自己艺术人生重要的转折点，成为国家级非物质文化遗产景泰蓝项目代表性传承人、亚太地区手工艺大师、中国工艺美术张同禄大师的艺徒，暨珐琅张传承人。创办了“张同禄珐琅艺术中心”艺术机构。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="heyanxin" class="inheritor-content">
+                        <h2 class="inheritor-title">谭志平 · 永胜银胎掐丝珐琅传承人</h2>
+                        <div class="content-r">
+                            <img src="../images/文化传承/谭志平.jpg" alt="">
+                            <p class="no-content">
+                                谭志平1976年生于永胜三川镇金官街银匠世家，14岁随伯父谭继成学艺，成为“谭记银匠”第四代传人。2023年被公示为国家级非物质文化遗产传承人。</p>
+                            <p class="no-content">
+                                谭家自清朝末年开始制作珐琅银饰品，谭志平的祖上都是做珐琅的高手。当时，很多进京赶考的人为了讨好考官，经常用精美的珐琅器作为礼物送给考官。而凡到永胜的官员和商贾，都会到谭家制作几套珐琅酒具作为礼品和供奉之物，带到京城，也就是这样的“因缘际会”，谭家的珐琅银器声名远播。
+                            </p>
+                            <p class="no-content">
+                                永胜县的珐琅银器制作从上世纪五十年代初开始走向衰落，如今的珐琅银器制作世家，仅剩下了谭氏家族。谭志平是谭家的第四代传人。14岁时，他开始跟伯父谭继康学艺。谭家从前制作的珐琅彩银器主要是珐琅首饰和酒具两类。后来，在原来的基础上又增添了多形百枷锁、银菩萨、龙头壶、凤头壶、牡丹花壶等二十多个品种。
+                            </p>
+                            <p class="no-content">
+                                小隐隐于山，大隐隐于世，鱼得水逝，因其忘乎水。识此，可以超物累、乐天机。谭志平和他的珐琅银器似乎都一直在这样平静简单地生活着，处世自得。谭志平的小店开在丽江永胜县金官镇上，一条偏僻幽静的小街是这个镇唯一的主街，就算是赶街天，也只能卖出不多的银器。虽见不到人买，他的珐琅银器却有人订货，他常坐在小店的一隅练手艺。在小小的作坊里，谭志平天天躬身一锤一锤敲打这些碎银子，做好了银胎后，他还要做一道所有普通银匠都不做的工序，让它们更加流光溢彩。
+                            </p>
+                            <p class="no-content">
+                                谭志平觉得，自己会做珐琅彩银器是一件令祖辈和后辈都骄傲的事。“能打出普通银器的人千千万万，他们只能称得上是‘匠人’，而我，怎么说也称得上‘艺人’，因为我这项技艺是需要技术和功夫的。”谭志平有自信。
+                                现在，谭志平真正融入到了“银子的世界”，每天在打磨和熔炼着自己的耐心和细心，在珐琅银器的世界里，他要“跟这银子打一辈子交道”，他觉得为了理想而努力，这是他每一天的目标。</p>
+                        </div>
+                    </div>
+
+                    <div id="humeiyue" class="inheritor-content">
+                        <h2 class="inheritor-title">毕志勇 · 掐丝冷珐琅传承人</h2>
+                        <div class="content-r">
+                            <img src="../images/文化传承/毕志勇.jpeg" alt="">
+                            <p class="no-content">
+                                毕志勇，生于1966年，山西晋中人，现居北京，毕业于山西晋中师专艺术系。国家一级美术师、中国人民大学艺术学院客座教授，毕志勇油画工作室研修班导师、牛津艺术学院（中国）油画高研班客座教授、晋中学院（美术学院）特聘教授、中国国家工美协会会员（油画专业）、中国工艺美术学会会员。
+                            </p>
+                            <p class="no-content">
+                                毕志勇自幼学习美术，十年前被朋友一幅金丝珐琅画所吸引，便开始专攻景泰蓝掐丝点蓝技法与珐琅仿油画、工笔技法等。近年来，他力求创新，将中国古典绘画的晕染法、西方油画的透视法和现代的色彩处理方法融为一体，开辟新一代画风融入金丝珐琅画中。
+                            </p>
+                            <p class="no-content">
+                                为传承中国传统文化，毕志勇和团队创作出《永乐宫壁画》《金陵十二钗》《八马财神》等作品。其中，《永乐宫壁画》选自山西运城永乐宫三清殿壁画《朝元图》。画中用金丝勾勒的神仙人物向着一个方向朝拜，前后排列四、五层之多，井然有序、气势恢宏。将唐卡、掐丝珐琅、平遥推光漆三项传统工艺相结合，创作出独具特色的金丝珐琅画。
+                            </p>
+                            <p class="no-content">
+                                “金丝珐琅画不仅是对传统工艺的创新与发展，还有对非物质文化遗产的传承。”毕志勇说，唐卡技艺的传承、掐丝珐琅工艺的制作、推光漆画框的首次运用，这三项传统工艺相结合的金丝珐琅画，也让非物质文化遗产“活”起来。
+                            </p>
+                            <p class="no-content">
+                                谈及传承问题，毕志勇并不担心。他与晋中学院美术学院进行合作，通过民间工艺进课堂，培养了一批传统工艺爱好者。“学生的加入会给传统工艺的传承和创新注入新的思路，赋予作品更高的审美与思想水平。”
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="hejinghua" class="inheritor-content">
+                        <h2 class="inheritor-title">于刚 · 于氏掐丝珐琅釉彩技艺传承人</h2>
+                        <div class="content-r">
+                            <img src="../images/文化传承/于刚.webp" alt="">
+                            <p class="no-content">
+                                于刚，今年47岁，是八里台镇第四小学美术教师，也是“于氏掐丝珐琅釉彩技艺”第四代传承人。自幼喜欢美术，曾师承知名画家常跃波、郭德岭先生，打下了坚实的美术功底，而一次与景泰蓝的邂逅，使于刚深深地折服于这项古老的技艺。
+                            </p>
+                            <p class="no-content">他从小学习油画，
+                                2011年开始研究掐丝珐琅画，经过多年的潜心钻研和向众多名家请教，我对掐丝珐琅釉彩艺术有了更深刻的理解和感悟，并先后创作出了《清明上河图》《虢国夫人游春图》等作品，其中作品《荷花小鸟》获“第四届中国国际民间艺博会”优秀奖、《虢国夫人游春图》获“京津冀民间艺术精品联展”优秀奖、《工笔牡丹四条屏》获“纪念天津小站练兵120周年”画展优秀奖等。
+                            </p>
+                            <p class="no-content">
+                                后随第三代传承人马玉元先生学习掐丝珐琅技艺，经过不断锤炼技艺，他形成了自己独特的掐丝珐琅釉技艺。其创作题材非常广泛，涉及书法、花鸟、山水、人物、唐卡、静物等多种题材。其作品高端雅致，别具匠心，不仅布局巧妙，而且层次分明，富有立体感，形神兼备，精美华丽、色彩明艳，被国内外各界人士广泛收藏。
+                            </p>
+                            <p class="no-content">
+                                2016年掐丝珐琅《青花瓷》作为国礼，赠与法国和俄罗斯首脑。2017年于刚荣获天津工艺美术学会授予“掐丝珐琅艺术大师”称号。2019年4月天津博物馆定制的《掐丝珐琅芍药雉鸡玉壶春瓶》屏风，参加联合国日内瓦万国宫“古丝路建筑与当代艺术设计展”。
+                            </p>
+                            <p class="no-content">于刚对掐丝珐琅釉彩艺术有了更深刻的理解和感悟，他希望能通过自己的努力为这项古老的技艺注入一丝“活力”，让这项传统技艺传承下去。</p>
+                        </div>
+                    </div>
+                    <div id="yiyunjuan" class="inheritor-content">
+                        <h2 class="inheritor-title">丁明鸿 · 国家级非物质文化遗产景泰蓝技艺传承人</h2>
+                        <div class="content-r">
+                            <img src="../images/文化传承/丁明鸿.jpg" alt="">
+                            <p class="no-content">丁明鸿，男，生于1962年，北京市人，国家级非物质文化遗产景泰蓝技艺传承人，毕业于北京设计艺术学院。
+                                北京故宫博物院乾清宫景泰蓝复制工程总设计师 ，中国景泰蓝青花创始人 ，全国工艺美术理事会常务理事
+                                ，他的艺术生涯始于1978年，进入全国最大的景泰蓝厂——北京市珐琅厂，师从中国工艺美术大师戴嘉林，深入学习景泰蓝工艺。新中国第一批定向培养的景泰蓝专业设计人才
+                                。他的作品曾获得中国工艺美术大师精品奖(西湖博览会)金、银、铜奖。</p>
+                            <p class="no-content">
+                                丁明鸿在景泰蓝设计上秉承“跟随时代、贴近生活、表达情感”的理念，开创了“新红梅系列”和“青花色调景泰蓝系列”等新颖作品，将传统工艺与现代审美完美结合。</p>
+                            <p class="no-content">
+                                2003年，他独立完成北京香山勤政殿复原工程中的景泰蓝陈设品设计，这是历史上唯一一次仿制故宫乾清宫全部景泰蓝陈设品的项目。2009年，他设计监制了阿塞拜疆首都巴库总统府广场的8.2米高、6米直径的特大景泰蓝景观喷泉，成为世界上最大、最高的景泰蓝外景作品。
+                            </p>
+                            <p class="no-content">
+                                丁明鸿的作品多次被选为国礼，并荣获中国工艺美术大师精品奖（西湖博览会）金、银、铜奖。他的《玫瑰情怀》三件套和《古韵雅风》三件套分别获得2008年和2009年的金奖。</p>
+                            <p class="no-content">
+                                作为国家级非物质文化遗产景泰蓝技艺传承人，丁明鸿致力于景泰蓝工艺的传承与发展。他通过个人工作室和公司，培养新一代景泰蓝设计师，推动这一传统工艺的现代化。
+                                丁明鸿的艺术成就不仅在国内广受赞誉，也在国际上享有盛誉，是景泰蓝工艺领域的标志性人物。</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const items = document.querySelectorAll('.inheritor-item');
+
+                        items.forEach(item => {
+                            item.addEventListener('click', function () {
+                                // Remove active class from all items
+                                items.forEach(i => i.classList.remove('active'));
+                                // Add active class to clicked item
+                                this.classList.add('active');
+
+                                // Hide all content
+                                document.querySelectorAll('.inheritor-content').forEach(content => {
+                                    content.classList.remove('active');
+                                });
+
+                                // Show corresponding content
+                                const targetId = this.getAttribute('data-target');
+                                document.getElementById(targetId).classList.add('active');
+                            });
+                        });
+
+                        // Initialize first item as active
+                        if (items.length > 0) {
+                            items[0].click();
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+        <h1 id="h2">传承价值</h1>
+        <div class="boxtwo">
+            <img src="../images/文化传承/jz1.png" alt="" class="boxtwoimg1">
+            <div class="boxtwo-r">
+                <p class="p1">
+                    纵观历朝历代的掐丝珐琅作品不难发现，所有的作品都包含着以下几个特点:首先，它们都具备历史研究的价值;其次，掐丝珐琅成品精美，也具备相当的审美价值;再次，掐丝珐琅不仅仅可以作为艺术品来欣赏，这一技艺也可以和生活完美结合，具有一定的实用价值;最后，作为非遗项目，掐丝珐琅和其他中国特有的艺术品一样，受到了世界的喜欢和认可，具有文化交流价值。
+                </p>
+                <h3>其价值可以分为以下四部分：</h3>
+                <ul>
+                    <li>历史研究价值———掐丝珐琅是中国工艺史遗留的瑰宝</li>
+                    <li>艺术审美价值———掐丝珐琅是整理了600年的艺术精华</li>
+                    <li>生活实用价值———掐丝珐琅是可以丰富生活的实用艺术</li>
+                    <li>文化交流价值———掐丝珐琅是中西文化交融的“调色盘”</li>
+                </ul>
+                <img src="../images/文化传承/jz2.png" alt="" class="boxtwoimg2">
+                <a href="../sub/wenhuachuancheng/page1.html">立即了解</a>
+            </div>
+        </div>
+        <h1 id="h3">传承发展</h1>
+        <div class="boxthree">
+            <div class="container">
+                <div class="villages-grid">
+                    <a href="../sub/wenhuachuancheng/page2.html#1" class="village-card">
+                        <h2>主体地位确定</h2>
+                       
+                        <p>社会发展及体系的不断完善，促使手工艺人对自身的定位有了新的认知。景泰蓝手工艺人...
+                        </p>
+                        <p>在对艺术品展开评判过程中，评判家和美学家构建的理论体系和标准要求，是艺术品造势...</p>
+                        <p>另外，工艺大师还需与生产企业之间建立良好的合作关系，将设计作品直观展现在人们眼...</p>
+                        <p>这一体系模式，在凸显艺术品特性和价值的基础上，添加功利性特点，既能够凸显工艺美...</p>
+                    </a>
+                    <a href="../sub/wenhuachuancheng/page2.html#2" class="village-card">
+                        <h2>多途径扩展，促进景泰蓝的快速传播</h2>
+                        <p>一是与学校和高校联合运作，为景泰蓝知识普及奠定基础。景泰蓝在我国虽然发展时间较...</p>
+                        <p>二是构建艺术空间，树立品牌效应。不同品牌可根据自身特征完成艺术空间的构建，进行...</p>
+                        <p>艺术空间构建要素有创作者、接受者、媒介物、艺术加工手段及空间感这几种，空间内不...</p>
+                        <p>此外，可应用多媒体手段，加大景泰蓝品牌宣传...</p>
+                        <p>总之，在非遗环境背景下，要对自身予以准确...</p>
+                    </a>
+        
+                    <a href="../sub/wenhuachuancheng/page2.html#3" class="village-card">
+                        <h2>身份转换</h2>
+                        <p>现阶段景泰蓝手工艺要想在市场中得到较好发展，首要工作就是转变自身角色定位，从以往的传承者向管理者转化，以营造良好的市场氛围，推动行业前行。市场语境下的传承者...
+                        </p>
+                        <p>鉴于此，企业有必要转变自身的发展理念，以合作共赢理念，提高景泰蓝生产效率，增强自身业务能力，使其更好的面对市场变动，之后在稳定运行的基础上，对景泰蓝价格、销...</p>
+                    </a>
+
+                    <a href="../sub/wenhuachuancheng/page2.html#4" class="village-card">
+                        <h2>树立品牌艺术，打造特色品牌产业</h2>
+                        <p>一方面做到工艺流程的保密处理，增加企业自身神秘性...
+                        </p>
+                        <p>另一方面完善和稳定匠人结构。一些大规模的景泰蓝加工厂一直都遵循着两家不用同一匠人的规则，这样做的目的是保证匠人的稳定性，也是为了突显景泰蓝...</p>
+                        <p>再者，开展新媒体营销宣传。新媒体营销多是利用互联网平台、收集APP软件等方式，将景泰蓝的基础制作工艺、发展历史、文化特色以视频、图片等方式传播...</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="footer-a">
+                <a href="../sub/wangzhanditu.html">网站地图</a>|
+                <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+                <a href="../sub/lianxiwomen.html">联系我们</a>|
+                <a href="../sub/banquan.html">版权与免责声明</a>
+            </p>
+            <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+            <div id="logo">
+                <img src="../images/首页/纹样4.png">
+            </div>
+    </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

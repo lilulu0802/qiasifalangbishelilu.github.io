@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传承发展</title>
+    <link rel="stylesheet" href="../../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../../js/script.js">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../../images/背景纹理03.jpg);
+        }
+
+        section {
+            width: 1200px;
+            margin: 30px auto 0;
+        }
+
+        section a {
+            color: #333;
+            text-decoration: none;
+            font-family: "宋体";
+            font-size: 16px;
+        }
+
+        section a:hover {
+            color: #b80233;
+        }
+
+        h1 {
+            font-family: 宋体;
+            color: #333;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h2 {
+            font-family: 宋体;
+            color: #333;
+            margin: 30px auto;
+        }
+
+        .texta p {
+            line-height: 25px;
+            text-indent: 2em;
+            color: #333;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .texta p:hover {
+            text-decoration: #8a8080 underline solid;
+        }
+
+        .texta {
+            width: 1200px;
+            margin: 20px auto 60px;
+        }
+
+        */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="../lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="../lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="../lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="../falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="../falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="../falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="../falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="../falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="../falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="../wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="../wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="../wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="../ziyuan.html#h1">展览</a></li>
+                        <li><a href="../ziyuan.html#h2">影音</a></li>
+                        <li><a href="../ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="../xueshu.html#h1">论坛</a></li>
+                        <li><a href="../xueshu.html#h2">调研</a></li>
+                        <li><a href="../xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../../index.html">首页</a>
+        <i>></i>
+        <a href="../../sub/wenhuachancheng.html">文化传承</a>
+        <i>></i>
+        <a href="../../sub/wenhuachancheng.html#h3">传承发展</a>
+    </section>
+    <div class="box">
+        <h1>中国掐丝珐琅工艺的传承发展</h1>
+        <div class="texta">
+            <h2 id="h1">一、主体地位确定</h2>
+            <p>社会发展及体系的不断完善，促使手工艺人对自身的定位有了新的认知。景泰蓝手工艺人在新形势环境中，也对自身地位进行了明确说明，将自身定义为工艺美术大师和非物质文化遗产的传承者。前者是对手工艺人技能、作品及成就贡献的一种概括，后者则说明景泰蓝手工艺人非遗发展参与情况。我国对非遗文化遗产传承者的身份给予了高度肯定。根据现有资料可知，我国对于景泰蓝手工艺大师的关注度较高，在现有的工艺美术大师评定中，景泰蓝手工艺大师有8名之多，这些人构成了专业体系结构，为行业的进一步发展及我国美学实力的提升奠定坚实基础。
+            </p>
+            <p>在对艺术品展开评判过程中，评判家和美学家构建的理论体系和标准要求，是艺术品造势的关键，而非遗特性的展现则是提高艺术品和艺术家自身价值的关键要素，评价越高，相应的该艺术家的作品价值也就越高。对于景泰蓝行业来说，为更好地推动行业发展，需要提升工艺美术大师作品的艺术和收藏价值，这首先需要大师们对自身技艺有很好的把控，能够设计出符合实际要求的独具特色的产品。
+            </p>
+            <p>另外，工艺大师还需与生产企业之间建立良好的合作关系，将设计作品直观展现在人们眼前。工艺美术大师们出具完整的设计图，要清晰地表述各种图案纹样、形状及色彩搭配，企业按照艺术家们给出的模板展开产品制作，并对每件产品均附带相应的收藏价值证书。随着艺术家名头的提高，产品收藏价值也将逐渐提升。
+            </p>
+            <p>这一体系模式，在凸显艺术品特性和价值的基础上，添加功利性特点，既能够凸显工艺美术大师的身份，也能够带来一定的经济效益。生产后的产品会经过文化公司、经销商运作销售到世界各地，从而提高工艺美术大师的知名度，促进我国文化艺术的进一步发展。同时在合作过程中，企业为了增加品牌效益，会聘用专属工艺美术大师，并树立独特的艺术符号，为非遗传承提供助力。保护与传承非遗意识的不断普及，使得“精英”文化的边界在不断模糊，身份的获得给了更多人机会，珐琅厂的管理者也在积极寻求各种方式获得身份的认可，宣传景泰蓝。
+            </p>
+            <a class="village-card">
+                <h2 id="h2">二、多途径扩展，促进景泰蓝的快速传播</h2>
+                <p>一是与学校和高校联合运作，为景泰蓝知识普及奠定基础。景泰蓝在我国虽然发展时间较长，但在2000年以前的普及率却相对较低，人们对于景泰蓝的了解多集中在外贸出口及上层社会认知上，普通大众对景泰蓝的关注度不高，使得景泰蓝发展受到一定限制，存在的手工艺者数量也越来越稀少。鉴于此，有必要加大景泰蓝在普通民众中的推广力度，扩展受众面，不断积累更多艺术性人才，为其发展贡献力量。而与学校和高校的合作，能够将景泰蓝融入到艺术专业教学中去，设置专门学科加大学生对其的重视力度，了解和熟练工艺技能，感受其魅力所在，以此来构建完善的艺术体系，促进行业发展。另外，艺术类院校的学生，他们普遍掌握了一定的绘画技巧，但对景泰蓝的认识是陌生的，与景泰蓝匠人的合作，将新的审美观念与传统技艺融合，才能取长补短不断创新。
+                </p>
+                <p>二是构建艺术空间，树立品牌效应。不同品牌可根据自身特征完成艺术空间的构建，进行藏品展示，通过微信公众号等社交媒体完成文化的传播和讲解，以加大人们对藏品的关注力度，让更多人了解到景泰蓝的艺术魅力。在艺术空间创造上，可分为基础性现实空间和超越性审美空间这两种。不同空间设计内容各不相同，展现内涵也会存在明显差异。空间设置中要按照藏品特征配备合适的艺术装置，凸显藏品特点，让人们感受文化内涵。
+                </p>
+                <p>艺术空间构建要素有创作者、接受者、媒介物、艺术加工手段及空间感这几种，空间内不单纯是藏品的展出，还可将藏品设计和制作过程予以详细讲解，且定期举办相应的审美活动，增强人们的体验，让更多人接受景泰蓝手工艺术，拓展该工艺前进渠道，促进行业持续发展。再者，艺术空间也是非遗活动举办的重要场所，肩负着文化传承使命。为此，在创建中要考虑多方面因素，完善空间水平，彰显艺术效果。
+                </p>
+                <p>此外，可应用多媒体手段，加大景泰蓝品牌宣传力度，以公众号、微博等方式讲解景泰蓝发展历史、品牌由来及富含的文化层次，介绍代表性工艺美术大师的发展经历，分享藏品整个制作过程，吸引观众眼前，提高观众认可度。
+                </p>
+                <p>总之，在非遗环境背景下，要对自身予以准确定位，以彰显对景泰蓝的敬畏感，发挥自身作用，实现传承目标。非遗传承人，“传”代表着要传播出去，“承”预示着要承接下去，珐琅厂的发展举措不仅需促使该工艺的纵向传承，还需在横向上为时代做出贡献，去创造符合时代的艺术审美。
+                </p>
+            </a>
+
+            <a class="village-card">
+                <h2 id="h3">三、身份转换</h2>
+                <p>现阶段景泰蓝手工艺要想在市场中得到较好发展，首要工作就是转变自身角色定位，从以往的传承者向管理者转化，以营造良好的市场氛围，推动行业前行。市场语境下的传承者其实就是市场管理者，其获取的市场渠道越宽，带来的利润越大，越有利于景泰蓝的发展。而现阶段景泰蓝生产企业多是以中小型企业为主，其在市场发展中面临着较大的竞争压力，经常会因为订单超支而出现各种问题。
+                </p>
+                <p>鉴于此，企业有必要转变自身的发展理念，以合作共赢理念，提高景泰蓝生产效率，增强自身业务能力，使其更好的面对市场变动，之后在稳定运行的基础上，对景泰蓝价格、销售渠道实行扩展，深化该工艺在民众心中的价值，并配合多种传播方式，发挥传承的作用，促进景泰蓝手工艺的良好发展。随着艺术市场的不断成熟，艺术博览会与艺术拍卖的市场结构逐渐完善。因而在艺术市场的运作中，符号化的表征尤为重要，从侧面体现出在非遗语境中，为何要强调自己的社会身份，以及品牌的创立。
+                </p>
+            </a>
+
+            <a class="village-card">
+                <h2 id="h4">四、树立品牌艺术，打造特色品牌产业</h2>
+                <p>一方面做到工艺流程的保密处理，增加企业自身神秘性，同时在制作过程中，添加一些创新性理念，科学挑选材料，规划工艺流程，彰显藏品的独特性特征，以此来增加自身品牌效应，发挥品牌作用。
+                </p>
+                <p>另一方面完善和稳定匠人结构。一些大规模的景泰蓝加工厂一直都遵循着两家不用同一匠人的规则，这样做的目的是保证匠人的稳定性，也是为了突显景泰蓝藏品的独特性，提高自身知名度。在日常工作中，应注重消息的流通和透明，保有匠人知情权，减少内部勾心斗角等利益纠纷，提升制作水平。
+                </p>
+                <p>再者，开展新媒体营销宣传。新媒体营销多是利用互联网平台、收集APP软件等方式，将景泰蓝的基础制作工艺、发展历史、文化特色以视频、图片等方式传播出去，让更多人了解景泰蓝的艺术魅力，同时也向大师们提供一个展现自身特长，提升知名度的方式渠道，吸引更多民众关注，为景泰蓝发展做好前提铺垫。不仅如此，多媒体营销宣传可增强宣传片的美感，应用多样化软件，对宣传片实行调试处理，从而引起人们共鸣，提高人们对美的追求。不过需要注意的是，尽可能避免网络交易，以防虚假产品的混入，降低人们对景泰蓝的认可度。
+                </p>
+            </a>
+        </div>
+        <footer>
+            <p class="footer-a">
+                <a href="../../sub/wangzhanditu.html">网站地图</a>|
+                <a href="../../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+                <a href="../../sub/lianxiwomen.html">联系我们</a>|
+                <a href="../../sub/banquan.html">版权与免责声明</a>
+            </p>
+            <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+            <div id="logo">
+                <img src="../../images/首页/纹样4.png">
+            </div>
+        </footer>
+        <div class="back-to-top" onclick="scrollToTop()">
+            返回顶部
+        </div>
+        <script>
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+</body>
+
+</html>

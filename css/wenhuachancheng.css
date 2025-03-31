@@ -1,0 +1,334 @@
+h1 {
+    width: 1200px;
+    font-family: 宋体;
+    font-weight: 800;
+    margin: 20px auto;
+    color: #333;
+    text-align: center;
+}
+h1::before{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-right: 30px;
+    background-image: url(../images/_祥云\ -\ 副本.png);
+    background-size: cover;
+}
+h1::after{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-image: url(../images/_祥云.png);
+    margin-left: 30px;
+    background-size: cover;
+}
+section {
+    width: 1200px;
+    margin: 30px auto 0;
+}
+
+section a {
+    color: #333;
+    text-decoration: none;
+    font-family: "宋体";
+    font-size: 16px;
+}
+
+section a:hover {
+    color: #b80233;
+}
+
+.boxone{
+    width: 1200px;
+    margin: 40px auto;
+}
+
+.container {
+    display: flex;
+    height: 490px;
+}
+.sidebar {
+    width: 290px;
+    /* background-color: #8e6a5a; */
+    background-image: url(../images/文化传承/底纹2.png);
+    color: white;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-image: url(../images/文化传承/底纹1.png);
+    background-size: cover;
+}
+
+.content img{
+    width: 250px;
+    height: 300px;
+    float: left;
+    left: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.inheritor-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.inheritor-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-left: 4px solid transparent;
+}
+.inheritor-item:hover {
+    background-color: #a07d6b;
+}
+.inheritor-item.active {
+    background-color: #6d4c41;
+    border-left: 4px solid #e8c4b8;
+}
+.inheritor-name {
+    font-weight: bold;
+    font-size: 1.0em;
+}
+.inheritor-type {
+    font-size: 0.85em;
+    opacity: 0.8;
+    margin-left: 5px;
+}
+.inheritor-content {
+    display: none;
+}
+.inheritor-content.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+.inheritor-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #6d4c41;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 宋体;
+}
+
+.no-content {
+    text-indent: 2em;
+    color: #4d4948;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.sidebar-header {
+    padding: 0 20px 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a07d6b;
+    font-size: 1.2em;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+}
+
+.boxtwo{
+    width: 1200px;
+    height: 400px;
+    margin: 40px auto;
+    position: relative;  
+}
+.boxtwoimg1{
+    position: absolute;
+    bottom: -5px;
+    width: 250px;
+    height: 350px;
+    z-index: 3;
+}
+.boxtwoimg2{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    
+}
+.boxtwo-r{
+    background-image: url(../images/文化传承/jzd2.png);
+    background-size: cover;
+    width: 1080px;
+    height: 400px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 0;
+}
+.p1{
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 320px;
+    text-indent: 2em;
+    color: #4d4948;
+    line-height: 28px;
+    cursor: pointer;
+}
+.boxtwo-r li{
+    list-style: none;
+    margin-left: 230px;
+    color: #4d4948;
+    font-family: 宋体;
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.boxtwo-r li:hover{
+    cursor: pointer;
+    text-decoration: #8c827f underline solid;
+}
+.boxtwo-r ul{
+    color: #4d4948;
+    margin: 20px 0;
+    
+}
+.boxtwo-r h3{
+    font-family: 宋体;
+    margin-left: 180px;
+    color: #4d4948;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.boxtwo-r a{
+    text-decoration: none;
+    color: #e5d8d5;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    background-color: #9d624f;
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+.boxtwo-r a:hover{
+    cursor: pointer;
+    color: #492114;
+}
+.container {
+    max-width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+}
+.boxthree h2{
+    font-family: 宋体;
+    text-align: center;
+    height: 44px;
+}
+.boxthree a{
+    text-decoration: none;
+    color: #333;
+}
+
+.villages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.village-card {
+    background-color: #f0ece2;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+
+.village-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #c7b198;
+}
+
+.village-card h2 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.village-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-indent: 2em;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 10;
+}
+.village-card p:hover{
+    text-decoration: #333 underline solid;
+    color: #492114;
+}
+/* Hover effects - similar to the 5th container reference */
+.village-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: #c7b198;
+}
+
+.village-card:hover::before {
+    background-color: #c7b198;
+    height: 8px;
+}
+
+.village-card:hover h2 {
+    color: #c7b198;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .villages-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .villages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .villages-grid {
+        grid-template-columns: 1fr;
+    }
+}

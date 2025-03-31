@@ -1,0 +1,251 @@
+.header {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 130px;
+    width: 100vw;
+    background-color: #333;
+    opacity: 0.3;
+}
+
+.header-top{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    letter-spacing: 5px;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    padding: 0 100px;
+}
+.header-top-l{
+    line-height: 70px;
+}
+.header-top img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    margin: 0 20px;
+}
+header hr{
+    width: 100%;
+    height: 1px;
+    color: #333;
+    opacity: 0.2;
+    z-index: 3;
+    position: absolute;
+    top: 70px;
+}
+.header-top-r {
+    display: flex;
+}
+.relative {
+    display: flex;
+}
+.relative{
+    cursor: pointer;
+}
+.header-bottom{
+    position: absolute;
+    top: 70px;
+    z-index: 3;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding:  0 120px;
+    list-style: none;
+}
+.li{
+    text-align: center;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+}
+.li a{
+    text-decoration: none;
+    margin: 0 auto;
+    font-family: "宋体";
+    font-weight: 800;
+    color: #fff;
+} 
+.li:hover{
+    border-bottom: 5px solid #bb1c33;
+    cursor: pointer;
+}
+.li ul{
+    display: none;
+    position: relative;
+    list-style: none;
+    width: 150px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(3, 3, 3, 0.3);
+    font-size: 16px;
+}
+#ul a:hover{
+    color: #b80233;
+}
+.li:hover .u2{
+    display: block;
+}
+.li:hover .u3{
+    display: block;
+}
+.li:hover .u7{
+    display: block;
+}
+.li:hover .u8{
+    display: block;
+}
+.time-ltemp {
+    margin: 0 10px;
+    transform: translateY(-3px);
+}
+#searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    margin-right: 30px;
+}
+
+#searchBox {
+    width: 0;
+    padding: 0;
+    border: none;
+    transition: width 0.3s ease;
+    opacity: 0;
+    margin-left: 20px;
+    outline: none;
+}
+
+#searchBox.active {
+    width: 200px;
+    height: 30px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    opacity: 1;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    margin-left: 10px;
+}
+.iconfont:hover{
+    cursor: pointer;
+}
+
+.banner-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner-images {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    transition: transform 2s ease - in - out;
+}
+
+.banner-image {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    margin: 0 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "iconfont" !important;
+    font-size: 35px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    top: -50px;
+}
+.dot:hover{
+    color: #b80233;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+.iconfont1{
+    font-family: "iconfont" !important;
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    color: #fff;
+}
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font/font_4836137_84978jxlec7/iconfont.ttf') format('woff2'),
+        url('./font/font_4836137_84978jxlec7/iconfont.woff') format('woff'),
+        url('./font/font_4836137_84978jxlec7/iconfont.woff2') format('truetype');
+}
+h1{
+    font-family: 宋体;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+    color: #333;
+}
+h1::before{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-right: 30px;
+    background-image: url(../images/_祥云\ -\ 副本.png);
+    background-size: cover;
+}
+h1::after{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-image: url(../images/_祥云.png);
+    margin-left: 30px;
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100vh;
+    width: 1200px;
+}

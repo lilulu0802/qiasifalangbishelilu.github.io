@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站地图</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/xueshu/lpage1.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/wangzhanditu.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../index.html">首页</a>
+        <i>></i>
+        <a href="../sub/wangzhanditu.html">网站地图</a>
+    </section>
+    <div class="box">
+        <h1>网站地图</h1>
+        <div class="boxa">
+            <h2><a href="../index.html">首页</a></h2>
+            <h2><a href="../sub/lishifazhan.html">历史发展</a></h2>
+            <ul>
+                <li class="line"><a href="../sub/lishifazhan.html#1">起源与传入</a></li>
+                <li class="line"><a href="../sub/lishifazhan.html#h2">发展历程</a></li>
+                <li><a href="../sub/lishifazhan.html#h3">现代形式</a></li>
+            </ul>
+            <h2><a href="../sub/falangzhizuo.html">珐琅制作</a></h2>
+            <ul>
+                <li class="line"><a href="../sub/falangleibie.html#h1">工艺流程</a></li>
+                <li class="line"><a href="../sub/falangleibie.html#h2">视频介绍</a></li>
+                <li><a href="../sub/falangleibie.html#h3">工艺特点</a></li>
+            </ul>
+            <h2><a href="../sub/falangleibie.html">珐琅类别</a></h2>
+            <ul>
+                <li class="line"><a href="../sub/falangleibie.html#h1">珐琅类别</a></li>
+                <li class="line"><a href="../sub/falangleibie.html#2">纹样探索珐琅</a></li>
+                <li><a href="../sub/falangleibie.html#h3">珐琅器鉴赏</a></li>
+            </ul>
+            <h2><a href="../sub/wenhuachancheng.html">文化传承</a></h2>
+            <ul>
+                <li class="line"><a href="../sub/wenhuachancheng.html#h1">传承人介绍</a></li>
+                <li class="line"><a href="../sub/wenhuachancheng.html#h2">传承价值</a></li>
+                <li><a href="../sub/wenhuachancheng.html#h3">传承发展</a></li>
+            </ul>
+            <h2><a href="../sub/gewuchuangxin.html">格物创新</a></h2>
+            <h2><a href="../sub/ziyuan.html">资源</h2>
+            <ul>
+                <li class="line"><a href="../sub/ziyuan.html#h1">展览</a></li>
+                <li class="line"><a href="../sub/ziyuan.html#h2">影音</a></li>
+                <li><a href="../sub/ziyuan.html#h3">图集</a></li>
+            </ul>
+            <h2><a href="../sub/xueshu.html">学术</a></h2>
+            <ul>
+                <li class="line"><a href="../sub/xueshu.html#h1">论坛</a></li>
+                <li class="line"><a href="../sub/xueshu.html#h2">调研</a></li>
+                <li><a href="../sub/xueshu.html#h3">访谈</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
+</body>
+
+</html>

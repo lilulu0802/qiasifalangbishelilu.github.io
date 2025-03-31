@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>版权与免责声明</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/xueshu/lpage1.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+
+        .box {
+            width: 1200px;
+            background-color: rgba(211, 196, 159, 0.2);
+            margin: 50px auto;
+            padding: 20px 30px 40px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+
+        h1 {
+            font-family: 宋体;
+            color: #5f3221;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1::before {
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            margin-right: 30px;
+            background-image: url(../images/_祥云\ -\ 副本.png);
+            background-size: cover;
+        }
+
+        h1::after {
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            background-image: url(../images/_祥云.png);
+            margin-left: 30px;
+            background-size: cover;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #5f3221;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5f3221;
+        }
+
+        footer {
+            width: 100vw;
+            margin: 40px auto 0;
+            padding-bottom: 40px;
+            background-image: url(../images/首页/底纹3.png);
+            background-size: cover;
+            color: #ede2d5;
+            padding-top: 5px;
+        }
+
+        footer img {
+            width: 60px;
+            height: 60px;
+        }
+
+        #logo {
+            width: 60px;
+            height: 60px;
+            margin: 40px auto 0;
+        }
+
+        .footer-a {
+            margin: 40px auto 20px;
+            width: 555px;
+        }
+
+        footer a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: #ede2d5;
+        }
+
+        footer a:hover {
+            cursor: pointer;
+            color: #801323;
+        }
+
+        section {
+            width: 1200px;
+            margin: 30px auto 0;
+        }
+
+        section a {
+            color: #333;
+            text-decoration: none;
+            font-family: "宋体";
+            font-size: 16px;
+        }
+
+        section a:hover {
+            color: #b80233;
+        }
+        h2{
+            color: #333;
+            font-family: 宋体;
+            margin: 10px 0;
+        }
+        h3{
+            color: #333;
+            font-family: 宋体;
+            margin: 10px 0;
+        }
+        .box p{
+            text-indent: 2em;
+            line-height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../index.html">首页</a>
+        <i>></i>
+        <a href="../sub/banquan.html">版权与免责声明</a>
+    </section>
+    <div class="box">
+        <h1>版权与免责声明</h1>
+        <p>中国掐丝珐琅传承网网站严格遵守《中华人民共和国著作权法》、《信息网络传播权保护条例》及相关法律、法规和政策，并积极采用先进技术进行保护。访问、浏览或使用掐丝珐琅传承网站，表明您已阅读、理解并同意受以下条款的约束，并遵守所有适用的法律和法规。如果您不同意下列任何条款、请停止使用本网站。
+        </p>
+        <h2>一、版权声明</h2>
+        <p>掐丝珐琅传承网网站刊载的包括但不限于图文、音频、视频、网站版式、网页设计等各项内容，均为掐丝珐琅传承网网站著作权所有，任何单位或个人未经事先书面许可，均不得将以上内容用于任何商业用途，如有未经许可用于商业用途或非法目的而侵害本网站相关著作权甚至影响本网站声誉的，将保留追究其法律责任的权利。
+        </p>
+        <h2>二、免责声明</h2>
+        <h3>（一）侵权通知</h3>
+        <p>本网站可能有部分信息是从网络、免费资源提供方转载、摘编获得的。如果您发现本网站使用了您拥有著作权的作品并对我们的编辑方式有异议，请向我们提供您的身份证明及您对该作品拥有著作权的有关文件，我们会尽快根据相关法律规定妥善处理。
+        </p>
+        <h3>（二）不保证声明</h3>
+        <p>虽然掐丝珐琅传承网力图提供准确的材料和内容，但并不对本网站所载的材料和信息，包括但不限于文本、图片、数据、观点、建议或网页等材料和内容的准确性、完整性、充分性和可靠性作出保证，也不对这些材料和内容作出任何明示或默示的、包括但不限于有关权利、质量和没有计算机病毒的保证，并且明确声明不对这些材料和内容的错误或遗漏承担责任。本网站也不就本网站上提供的任何产品、服务或信息做出任何声明、保证或认可，所有销售的产品和服务应受相关销售合同和条款的约束。
+        </p>
+        <h3>（三）第三方链接</h3>
+        <p>本网站可能保留有与第三方网站或网址的链接，访问这些链接将由用户自己作出决定，掐丝珐琅传承网并不保证这些链接上所提供的任何信息、数据、观点、图片、陈述或建议的准确性、完整性、充分性和可靠性。提供这些链接仅仅在于提供方便，并不表示对这些信息的认可和推荐，也不是用于广告目的。
+        </p>
+        <p>本声明之修改权、更新权和最终解释权均属掐丝珐琅传承网所有。</p>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国掐丝珐琅传承网</title>
+    <link rel="stylesheet" href="./font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="./font/font_4836137_84978jxlec7/iconfont.css">
+    <link rel="stylesheet" href="./css/sy.css">
+    <link rel="stylesheet" href="./js/script.js">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(./images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="./images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <!-- <i class="iconfont">&#xe61f;</i> -->
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="./index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="./sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="sub/lishifazhan.html#h1">起源与传入</a></li>
+                        <li><a href="sub/lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="sub/lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="./sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="sub/falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="sub/falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="sub/falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="./sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="sub/falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="sub/falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="sub/falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="./sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="sub/wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="sub/wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="sub/wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="./sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="./sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="sub/ziyuan.html#h1">展览</a></li>
+                        <li><a href="sub/ziyuan.html#h2">影音</a></li>
+                        <li><a href="sub/ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="./sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="sub/xueshu.html#h1">论坛</a></li>
+                        <li><a href="sub/xueshu.html#h2">调研</a></li>
+                        <li><a href="sub/xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="banner-container"id="viewport1">
+        <div class="banner-images">
+            <img src="./images/首页/02.png" alt="" class="banner-image">
+            <img src="./images/首页/01.png" alt="" class="banner-image">
+            <video muted src="./video/01_1.mp4" type="video/mp4" autoplay="autoplay" loop="loop"
+                class="banner-image"></video>
+            <img src="./images/首页/03.jpg" alt="" class="banner-image">
+            <img src="./images/首页/04.png" alt="" class="banner-image">
+        </div>
+        <div class="banner-dots">
+            <span class="dot" onclick="currentSlide(1)">&#xe60e;
+            </span>
+            <span class="dot" onclick="currentSlide(2)">&#xe60e;</span>
+            <span class="dot" onclick="currentSlide(3)">&#xe60e;</span>
+            <span class="dot" onclick="currentSlide(4)">&#xe60e;</span>
+            <span class="dot" onclick="currentSlide(5)">&#xe60e;</span>
+        </div>
+    </div>
+    <script src=".//js/script.js"></script>
+    <!-- 首页第一部分 -->
+    <div class="box">
+        <div class="boxone" id="viewport2">
+            <div class="boxone-l">
+                <h1 id="h1">遇见珐琅</h1>
+                <h3>
+                    以珐琅釉为彩，执金丝之笔
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;穿越千年，共赏中式浪漫
+                </h3>
+                <h4>“一件景泰蓝，十件官窑器”，铜胎掐丝珐琅又称“景泰蓝”’，是中华民族优秀独特的传统技艺。景泰蓝以其玉石般的温润，珠宝般的光泽瓷器般的细腻，金银般的灿烂，被称为北京工艺美术四大名旦之首。</h4>
+                <h4>那么，什么是掐丝珐琅呢?</h4>
+                <a href="./sub/guanyuzhongguoqiasifalang.html">关于珐琅 ></a>
+            </div>
+            <div class="boxone-r">
+                <div class="container">
+                    <div class="big-box"></div>
+                    <div class="small-box">
+                        <div class="img"><img src="./images/op/1.jpg" alt=""></div>
+                        <div class="img"><img src="./images/op/2.jpg" alt=""></div>
+                        <div class="img"><img src="./images/op/3.jpg" alt=""></div>
+                        <div class="img"><img src="./images/op/4.jpg" alt=""></div>
+                        <div class="img"><img src="./images/op/5.jpg" alt=""></div>
+                    </div>
+                </div>
+                <script>
+                    // 获取需要操作的元素
+                    // 左边大图
+                    let big_box = document.querySelector(".big-box");
+                    // 图片集合
+                    let imgs = document.getElementsByClassName("img");
+                    // 定时器
+                    let timer = null;
+                    // 当前图片下标
+                    let index = 0;
+
+                    // 重置函数
+                    function reset() {
+                        for (let i = 0; i < imgs.length; i++) {
+                            imgs[i].className = "img";
+                        }
+                    }
+                    // 选中函数
+                    function selected() {
+                        reset();
+                        imgs[index].className = "img active";
+                    }
+                    // 轮播函数
+                    function play() {
+                        timer = setInterval(function () {
+                            selected();
+                            index++;
+                            big_box.style.backgroundImage = "url(./images/op/" + index + ".jpg)";
+                            if (index == 5) {
+                                index = 0;
+                            }
+                        }, 1500);
+                    }
+
+                    // 页面加载完成后，初始化设置第一张图片为大图背景
+                    window.onload = function () {
+                        console.log('页面加载完成');
+                        setBigBoxBackground(0);
+                        play();
+                    };
+
+                    // 循环绑定每个小图片的鼠标移动事件
+                    for (let i = 0; i < imgs.length; i++) {
+                        // 鼠标移动到小图片上时触发
+                        imgs[i].onmousemove = function () {
+                            // 左边大图变成当前的小图片
+                            big_box.style.backgroundImage = "url(./images/op/" + (i + 1) + ".jpg)";
+                            // 执行重置函数并关闭定时器
+                            reset();
+                            clearInterval(timer);
+                            // 更新当前图片下标并执行轮播
+                            index = i + 1;
+                            if (index == 5) {
+                                index = 0;
+                            }
+                            play();
+                        }
+                    }
+                    // 执行轮播
+                    play();
+                </script>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('scroll', function() {
+                // 获取当前滚动位置
+                const scrollPosition = window.scrollY;
+                // 获取视口高度
+                const viewportHeight = window.innerHeight;
+                
+                // 计算各视口的显示阈值
+                const thresholds = [
+                    viewportHeight * 0.3,   // 第二屏显示位置
+                    viewportHeight * 1.3,   // 第三屏显示位置
+                ];
+                
+                // 控制各视口显示
+                document.getElementById('viewport2').style.opacity = 
+                    scrollPosition > thresholds[0] ? '1' : '0';
+                
+                document.getElementById('viewport3').style.opacity = 
+                    scrollPosition > thresholds[1] ? '1' : '0';
+                
+                document.getElementById('viewport4').style.opacity = 
+                    scrollPosition > thresholds[2] ? '1' : '0';
+            });
+    
+            // 初始加载时强制检查一次（防止页面刷新后停留在非顶部）
+            window.dispatchEvent(new Event('scroll'));
+        </script>
+        
+        <div class="boxtwo" id="viewport3">
+            <h1>资讯学术</h1>
+            <div class="boxtwoa">
+                <div class="boxtwos">
+                    <div class="boxtwo-l">
+                        <div class="boxtwo-l-top">
+                            <a href="./sub/ziyuan/page12.html">新春走基层 当非遗景泰蓝邂逅非遗“中国红”</a>
+                            <a href="./sub/ziyuan/page10.html">“向美而行”景泰蓝掐丝珐琅走进番禺市桥</a>
+                            <a href="./sub/ziyuan/page11.html">没想到掐丝珐琅也能这么潮！“闯”进一场非遗与神话的奇幻之旅</a>
+                        </div>
+                        <hr>
+                        <div class="boxtwo-l-bottom">
+                            <a href="./sub/xueshu/dpage1.html">[2025.01.26] 金属丝与珐琅彩的交响——掐丝珐琅调研报告</a>
+                            <a href="./sub/ziyuan/page1.html">[2024.04.25] 金琅华灿张宗宪捐赠掐丝珐琅器展</a>
+                            <a href="./sub/ziyuan/page2.html">[ 2025.01.19-2025.04.19] 瑞彩熠熠故宫博物院精品展</a>
+                            <a href="./sub/ziyuan/page7.html">传统与现代艺术的邂逅——迪拜世博会中国馆《五方文殊菩萨》</a>
+                        </div>
+                        <div>
+                            <a href="./sub/ziyuan.html"
+                                style="font-family: 宋体; position: relative; left: 370px;">更多></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>十二花神系列掐丝珐琅文创</h1>
+        <div class="boxthree">
+            <a href="./sub/gewuchuanxin/page1.html" class="boxthreea-a">
+                <h2 class="h2">服 饰 系 列</h2>
+            </a>
+            <a href="./sub/gewuchuanxin/page1.html" class="boxthreea-c">
+                <h2 class="h2">餐 饮 具 系 列</h2>
+            </a>
+            <a href="./sub/gewuchuanxin/page1.html" class="boxthreea-b">
+                <h2 class="h2">首 饰 系 列</h2>
+            </a>
+            
+            <a href="./sub/gewuchuanxin/page1.html" class="boxthreea-d">
+                <h2 class="h2">工 艺 品 系 列</h2>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="./sub/wangzhanditu.html">网站地图</a>|
+            <a href="./sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="./sub/lianxiwomen.html">联系我们</a>|
+            <a href="./sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="./images/首页/纹样4.png">
+        </div>
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

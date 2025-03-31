@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“寻踪非遗文化 探索材料密码”——景泰蓝传统手工制作技艺非物质文化遗产调研报告</title>
+    <link rel="stylesheet" href="../../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../../css/xueshu/lpage1.css">
+    <link rel="stylesheet" href="../../js/script.js">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="../lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="../lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="../lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="../falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="../falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="../falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="../falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="../falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="../falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="../wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="../wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="../wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="../ziyuan.html#h1">展览</a></li>
+                        <li><a href="../ziyuan.html#h2">影音</a></li>
+                        <li><a href="../ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="../xueshu.html#h1">论坛</a></li>
+                        <li><a href="../xueshu.html#h2">调研</a></li>
+                        <li><a href="../xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../../index.html">首页</a>
+        <i>></i>
+        <a href="../../sub/xueshu.html">学术</a>
+        <i>></i>
+        <a href="../../sub/xueshu.html#h2">调研</a>
+    </section>
+    <div class="box">
+        <h1>“寻踪非遗文化 探索材料密码”——景泰蓝传统手工制作技艺非物质文化遗产调研报告</h1>
+        <div class="p">
+            <p class="p1">来源：“材聚天理” 微信公众号</p>
+            <p class="p2">兰辉</p>
+        </div>
+        <div class="texta">
+            <p>围绕非物质文化遗产的保护与传承，展开了一系列的非遗调研活动。本报告旨在通过查阅相关材料、实地走访、访谈记录等方式，全面剖析非遗文化的生存状态，提出切实可行的传承策略，为乡村振兴与文化自信贡献力量。</p>
+            <h2>调查背景与目的</h2>
+            <p>景泰蓝，正名“铜胎掐丝珐琅”，是一种在铜胎上，用柔软的扁铜丝掐成各种花纹然后焊上，把矿物质的釉料填充在花纹里烧制而成的器物。元朝末年珐琅工艺自阿拉伯国家传入中国，很快便进驻 “宫廷”，深受皇帝的钟爱。明景泰年间（1450～1457），这一工艺更加成熟，加之当时的制品底色多为宝石蓝或孔雀蓝，故后人称之谓 “景泰蓝”。从明到清中期以前，景泰蓝都是官办且为宫廷供奉，直到清雍正后才出现民办珐琅作坊，景泰蓝才作为商品在市场上流通，并于道光年间开始出口海外，在国际上名噪一时。解放后，特别是改革开放以来，国家经济大发展，促进了文化大繁荣，2006年，景泰蓝制作技艺入选首批国家级非物质文化遗产名录。</p>
+            <img src="../../images/学术/d01.png" alt="">
+            <p>景泰蓝作为国家级非物质文化遗产，受到政府与社会各界的保护与关注，但在我们日常生活中却很少见到它的身影，非遗技艺的传承单靠非遗传承人个人的力量还是太薄弱了，如果想把这项技艺传承下去，我们首先得让更多的人了解它，懂得欣赏它，才能让人们真正爱上它。所以加强景泰蓝的宣传工作，发掘景泰蓝的发展潜力，助力景泰蓝的保护与传承已经迫在眉睫。</p>
+            <h2>调研过程</h2>
+            <p>兰辉于1月24日前往天津市武清区华昌工艺品厂并进行实地走访，参观体验景泰蓝传统手工制作技艺。通过与非遗传承人何爱莲老师以及她的丈夫马国庆老师的交流，了解了他们对非遗文化传承、制作、以及保护措施等方面的见解和建议。最后兰辉对此次非遗文化调研进行总结，形成调研报告。</p>
+            <div class="dimg">
+                <img src="../../images/学术/d02.png" alt="">
+                <img src="../../images/学术/d03.png" alt="">
+            </div>
+            <h2>调研结果</h2>
+            <h3>1.天津武清景泰蓝传统手工制作技艺的传承历史以及传承方式</h3>
+            <p>景泰蓝从海外传入中国，至今已有600多年的历史，但也是深锁宫廷的600年，因其极为珍贵，老百姓很少能看到真正的景泰蓝制品。天津武清景泰蓝传统手工制作技艺现已有100多年的历史。天津武清区毗邻北京，手艺人多进京学艺，然后回乡开办作坊。非遗传承人何爱莲老师的爱人马国庆老师祖上世代为官，清朝末年掌管内务府，便把一些村里的亲戚带进京做学徒，学习宫廷花丝镶嵌和景泰蓝制作技艺。随后家族代代相传，将传统手工技艺传承至今。1993年，非遗传承人何爱莲老师和其爱人马国庆老师共同成立了天津市武清区华昌工艺品厂，生产景泰蓝、宫廷花丝镶嵌和铁丝编工艺品出口。其在国家政策的支持下很快打开了国外市场，生产规模越来越大，形成了以大良镇北小营村为中心辐射周边多个乡镇的外贸主打产业。因为制作工艺精湛，此产品很快成为国内外中高端消费群体馈赠和收藏的艺术品。2006年，景泰蓝制作工艺被评为第一批国家级非物质文化遗产，2008年，宫廷花丝镶嵌手工工艺被评为第二批国家级非物质文化遗产，武清景泰蓝传统手工制作技艺又被评为市级非物质文化遗产。2016年，非遗传承人何爱莲老师和其爱人马国庆老师又成立了天津荣金工艺品有限公司。经过30年的发展，目前他们的产品运销20多个国家和地区。2023年，华昌工艺品厂还被天津市文化和旅游局列入天津市第一批非遗传承体验基地。</p>
+            <div class="dimg2">
+                <img src="../../images/学术/d04.png" alt="">
+                <img src="../../images/学术/d05.png" alt="">
+                <img src="../../images/学术/d06.png" alt="">
+            </div>
+            <h3>2.景泰蓝传统手工制作过程、对材料的看法以及独到之处</h3>
+            <p>非遗传承人何爱莲老师说:景泰蓝的制作工艺非常复杂，用料又很昂贵。材料多采用金银铜三种金属，珐琅的釉料就是由各种颜色的宝石磨成粉得到的。景泰蓝整体制作下来大致分为七个主要步骤，即图案设计、制胎、掐丝、点蓝、烧蓝、磨光、镀金，这七大步骤中又可以分出108道工序，需要十几个人分工合作，制作时长最少也需要100天，失之毫厘，就将前功尽弃，因此对制作者的要求非常高，需要制作者有足够的耐心和细心。</p>
+            <div class="dimg2">
+                <img src="../../images/学术/d07.png" alt="">
+                <img src="../../images/学术/d08.png" alt="">
+                <img src="../../images/学术/d09.png" alt="">
+            </div>
+            <h3>3.景泰蓝传统手工制作技艺面临的困难</h3>
+            <p>非遗传承人何爱莲老师说:我们最初成立武清区华昌工艺品厂时，厂里只有二三十人，后来慢慢发展到了两三百人，可随着人员的年龄越来越大，目前厂子里在一线制作的员工平均年龄大概在50岁左右，员工流失严重，我们现在面临着后继无人的情况。像景泰蓝这样的传统手工技艺至少需要三年才能出师，我做这行做了35年，从头到尾每一项工序我都会，但我现在制作景泰蓝还是采取合作的方式，因为每个人擅长的项目都不一样，有的人掐丝做得好，有的人点蓝很厉害，只有把每个人的强项都集合起来，才能真正制作出一件精品。但这对现在的年轻人来说太难了，要坚持至少三年，还得每天面对桔燥的流程日复一日地练习，很难有人能坚持下来。</p>
+            <h3>4.非遗传承人对景泰蓝手工制作技艺的保护和传承期望</h3>
+            
+            <div class="dimg">
+                <img src="../../images/学术/d10.png" alt="">
+                <img src="../../images/学术/d11.png" alt="">
+            </div>
+            <p>非遗传承人何爱莲老师说:作为第四代非遗传承人，我觉得我们有义务和责任将非遗继续传承和发展下去。景泰蓝传统手工制作技艺十分复杂，是老一辈的手工匠人一代代传承下来的，因此古法技艺不能丢，我们必须坚持手工制作。</p>
+            <p>我想非遗技艺的传承单靠我们个人的力量还是太薄弱了，但如果能够从娃娃抓起，让非遗进入校园，或许就会有很大的成效。目前北京工美技校己经将景泰蓝制作技艺作为他们的一门学科，让孩子们系统地学习这项技艺，将这门技艺变为自己的一项技能，或许对孩子们来说会更容易坚持下来。我也希望未来能够在天津推动景泰蓝进校园，如何让越来越多的年轻人对这项非遗产生兴趣，是我一直在思考的问题。</p>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
+</html>

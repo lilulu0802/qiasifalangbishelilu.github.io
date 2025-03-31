@@ -1,0 +1,179 @@
+section {
+    width: 1200px;
+    margin: 30px auto 0;
+}
+
+section a {
+    color: #333;
+    text-decoration: none;
+    font-family: "宋体";
+    font-size: 16px;
+}
+
+section a:hover {
+    color: #b80233;
+}
+.box{
+    width: 1200px;
+    margin: 0 auto;
+}
+.boxone {
+    background-image: url(../../images/底纹9.png);
+    width: 1200px;
+    height: 600px;
+    margin: 40px auto;
+    background-size: cover;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxone-r {
+    width: 700px;
+
+}
+
+.boxone-r img {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    right: 200px;
+}
+
+.boxone-r-top {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boxone-r p {
+    line-height: 25px;
+    text-indent: 2em;
+    color: #714d33;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.boxone-r p:hover {
+    text-decoration: #714d33 underline;
+}
+
+.boxone-r-bottom {
+    background-color: rgba(211, 185, 123, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.boxone h1 {
+    color: #5f3221;
+    font-family: 宋体;
+    font-size: 72px;
+    margin: 20px 0;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.boxone h1::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 20px;
+    width: 160px;
+    height: 2px;
+    background-color: #846c48;
+}
+.boxone h1::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: 20px;
+    width: 160px;
+    height: 2px;
+    background-color: #846c48;
+}
+h2 {
+    color: #846c48;
+    font-family: 宋体;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+h3 {
+    color: #846c48;
+    font-family: 宋体;
+    margin: 10px 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+h4 {
+    color: #846c48;
+    font-family: 宋体;
+    margin: 10px 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+h1{
+    font-family: 宋体;
+    color: #333;
+    margin-left: 20px;
+}
+
+.boxone-l {
+    position: relative;
+}
+
+.boxone-l img {
+    width: 400px;
+    height: 430px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.boxtwo{
+    margin: 40px auto;
+}
+
+.boxtwo-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+.boxtwo-bottom img{
+    width: 350px;
+    height: 280px;
+    cursor: pointer;
+    
+}
+
+h5{
+    margin: 5px;
+}
+
+.h5a{
+    color: #fff;
+    font-family: 宋体;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0; /* 初始位置在图片下方一定距离隐藏 */
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.5);
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.boxtwoaa p{
+    margin: 5px;
+}
+.boxtwoaa{
+    position: relative;
+    width: 350px;
+    height: 280px;
+    margin-bottom: 40px;
+}
+.boxtwoaa:hover .h5a{
+    opacity: 1; 
+}

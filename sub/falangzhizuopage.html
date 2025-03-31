@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珐琅制作</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/falangzhizuopage.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../index.html">首页</a>
+        <i>></i>
+        <a href="../sub/falangzhizuo.html">珐琅制作</a>
+        <i>></i>
+        <a href="../sub/falangzhizuopage.html">掐丝珐琅的工艺特色</a>
+    </section>
+    <h1>掐丝珐琅的工艺特色</h1>
+    <div class="box">
+            <p>景泰蓝作为一种美术工艺品，其制法即于铜器表面上以各色珐琅质涂成花纹，花纹的四周嵌以铜丝或金银丝，再用高火度烧即成。刚从火中取出的景泰蓝颜色基本呈黑色，待其冷却后才显现出五彩缤纷的样貌。这项工艺始于明代景泰，而且初创时只有蓝色，所以叫景泰蓝。虽然各色具备，然而仍然使用以前的名字。因为景泰蓝已变为一种工艺的名称，而不是颜色的名称，据说景泰为宣德之子，宣德重视铜器以及铸冶铜质，景泰在幼年期间耳濡目染，认识极详，且之极深，只是对于铸炼方面，宣德已到达绝顶，没有能力再求突破，就在颜色方面另别辟蹊径，以图出奇制胜。终于有景泰蓝的创制。</p>
+            <p>到清朝乾隆时期，又开始烧制，且品类多，成绩好，虽然不能和景泰、成化时期相比，但是比起弘正以后出品物绝不逊色。现今虽有康雍的器物出现，然而细细考究竟与乾隆所制器物没有什么不同实际上是乾隆所制，刻康雍年款，却不是康雍制作的。大体上说，明代的胎的铜质较好，多为紫铜胎，体略显厚重，故造型仿古的多，主要仿青铜所用的彩釉均为天然矿物质料，色彩深沉而逼真，红像宝石红，绿像松石绿。此时的丝掐得较粗，镀金部分金水厚。彩釉上大多有砂眼。款有“大明景泰年制”或“景泰年制”，底款、边款均有。</p>
+            <p>清代的景泰蓝工艺比明代有提高，胎薄，掐丝细，彩釉也比明代要鲜艳，并且无砂眼，花纹图案繁复多样，但不及明代的文饰生动，镀金部分金水较薄，但金色很漂亮。</p>
+            <p>民国时期景泰蓝总体水平不及前代，胎体薄，色彩鲜艳有浮感，做工较粗。这时只有“老天利”，“德兴成”，制作的景泰蓝工细，质量好。造型多仿古铜器，或仿乾隆时的精品款，已都是刻款了，景泰蓝的陈设品多，不做实用品。</p>
+            <p>随着的景泰蓝工艺大有提高，造型多样纹饰品种繁多，价格上也让人比较容易接受，因此，已成为我们与国际友人和亲朋好友互相往来的最佳礼品了。但当代人对景泰蓝工艺画的认识还停留在书本，真正欣赏过景泰蓝作品的为数不多。钟连盛大师2007年设计了新加坡佛牙寺超大型景泰蓝《转经轮藏》，是世界上最大的景泰蓝制品。此工程与80余平方米的《花开富贵》景泰蓝艺术喷水池工程均在景泰蓝工艺技术和艺术表现上实现了历史性超越。</p>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../images/首页/纹样4.png">
+        </div>
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

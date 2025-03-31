@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/xueshu.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <section>
+            <a href="../index.html">首页</a>
+            <i>></i>
+            <a href="../sub/xueshu.html">学术</a>
+        </section>
+    </header>
+    <div class="box">
+        <h1 id="h1">论坛</h1>
+        <div class="boxone">
+            <div class="article">
+                <a href="../sub/xueshu/lpage1.html">地方美术校本课程开发与实施——平阴县实验小学掐丝珐琅校本课程</a>
+                <p>2024.10.25</p>
+            </div>
+            <div class="article">
+                <a href="../sub/xueshu/lpage2.html">珐琅彩瓷在我国的发展历程及价值分析</a>
+                <p>2024.12.04</p>
+            </div>
+            <div class="article">
+                <a href="../sub/xueshu/lpage3.html">掐丝珐琅工艺在现代首饰设计中的应用</a>
+                <p>2024.07.05</p>
+            </div>
+            <div class="article">
+                <a href="../sub/xueshu/lpage4.html">工艺赋能开发——当掐丝珐琅画邂逅现代插画设计</a>
+                <p>2025.04.05</p>
+            </div>
+            <div class="article">
+                <a href="../sub/xueshu/lpage5.html">传统文化元素在现代设计中的应用——以敦煌壁画题材在掐丝珐琅工艺中的运用为例</a>
+                <p>2023.08.15</p>
+            </div>
+            <div class="article">
+                <a href="../sub/xueshu/lpage6.html">工艺纵横 景泰蓝在现代产品设计中的应用研究</a>
+                <p>2025.02.24</p>
+            </div>
+            <div class="article">
+                <a href="../sub/xueshu/lpage7.html">省级非物质文化遗产“掐丝珐琅釉画”从“指尖技艺”到“指尖效益”</a>
+                <p>2023.12.01</p>
+            </div>
+            <div class="article">
+                <a href="../sub/xueshu/lpage8.html">从御用品到国粹——晚清时期景泰蓝文化身份的建构与变迁</a>
+                <p>2024.08.30</p>
+            </div>
+        </div>
+        <h1 id="h2">调研</h1>
+        <div class="boxtwo">
+            <div class="boxtwo-l">
+                <img src="../images/学术/dy.jpg" alt="">
+            </div>
+            <div class="boxtwo-r">
+                <ul>
+                    <li>
+                        <a class="a" href="../sub/xueshu/dpage1.html">金属丝与珐琅彩的交响</a>
+                        <p class="ap">本报告通过实地调研、发放问卷、文献查阅等多种方式，分析掐丝珐琅在传<br> 承与发展过程中遇到的问题和困难，并提出相应的对策和建议。希望通过此次调研，能够为掐丝珐琅的保护与传承贡献一份力量，推动这一传统工艺美术在现代社会中焕发出新的生机与活力。</p>
+                        <p class="p">2025.01.26</p>
+                    </li>
+                    <li>
+                        <a href="../sub/xueshu/dpage2.html">寻踪非遗文化 探索材料密码</a>
+                        <p class="ap">围绕非物质文化遗产的保护与传承，我们展开了一系列的非遗调研活动。本<br> 报告旨在通过查阅相关材料、实地走访、访谈记录等方式，全面剖析非遗文化的生存状态，提出切实可行的传承策略，为乡村振兴与文化自信贡献力量。</p>
+                        <p class="p">2025.02.05</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1 id="h3">访谈</h1>
+        <div class="boxthree">
+            <a href="../sub/xueshu/fpage1.html" class="boxthreea">
+                <div class="img-threebox">
+                    <img src="../images/学术/xs01.png" alt="">
+                </div>
+                <div class="textbox">
+                    <p>指尖上的艺术，李炎与掐丝珐琅</p>
+                </div>
+            </a>
+            <a href="../sub/xueshu/fpage2.html" class="boxthreea">
+                <div class="img-threebox">
+                    <img src="../images/学术/ft204.png" alt="">
+                </div>
+                <div class="textbox">
+                    <p>大国文化守护者 | 王海斌：守护东方蓝</p>
+                </div>
+            </a>
+            <a href="../sub/xueshu/fpage3.html" class="boxthreea">
+                <div class="img-threebox">
+                    <img src="../images/学术/ft302.png" alt="">
+                </div>
+                <div class="textbox">
+                    <p>王晓昕专访：当代珐琅艺术的“守正·创新”之路</p>
+                </div>
+            </a>
+            <a href="../sub/xueshu/fpage4.html" class="boxthreea">
+                <div class="img-threebox">
+                    <img src="../images/学术/ft400.png" alt="">
+                </div>
+                <div class="textbox">
+                    <p>专访山东省工艺美术大师——邵海珍</p>
+                </div>
+            </a>
+            <a href="../sub/xueshu/fpage5.html" class="boxthreea">
+                <div class="img-threebox">
+                    <img src="../images/学术/ft500.jpg" alt="">
+                </div>
+                <div class="textbox">
+                    <p>访景泰蓝掐丝珐琅市级非遗传承人祝慧琼</p>
+                </div>
+            </a>
+        </div>
+        <!-- <div class="boxthree">
+            <a href="../sub/xueshu/fpage1.html" class="boxthreea">
+                <div class="img-threebox">
+                    <img src="../images/学术/xs01.png" alt="">
+                </div>
+                <div class="textbox">
+                    <p>指尖上的艺术，李炎与掐丝珐琅</p>
+                </div>
+            </a>
+            <a href="../sub/xueshu/fpage2.html" class="boxthreea">
+                <p>大国文化守护者 | 王海斌：守护东方蓝</p>
+                <img src="../images/学术/ft204.png" alt="">
+                <div class="textbox">
+                    <p>指尖上的艺术，李炎与掐丝珐琅</p>
+                </div>
+            </a>
+            <a href="../sub/xueshu/fpage3.html" class="boxthreea">
+                <p>王晓昕专访：当代珐琅艺术的“守正·创新”之路</p>
+                <img src="../images/学术/ft302.png" alt="">
+                <div class="textbox">
+                    <p>指尖上的艺术，李炎与掐丝珐琅</p>
+                </div>
+            </a>
+            <a href="../sub/xueshu/fpage4.html" class="boxthreea">
+                <p>专访山东省工艺美术大师——邵海珍</p>
+                <img src="../images/学术/ft400.png" alt="">
+                <div class="textbox">
+                    <p>指尖上的艺术，李炎与掐丝珐琅</p>
+                </div>
+            </a>
+            <a href="../sub/xueshu/fpage5.html" class="boxthreea">
+                <p>访景泰蓝掐丝珐琅市级非遗传承人祝慧琼</p>
+                <img src="../images/学术/ft500.jpg" alt="">
+                <div class="textbox">
+                    <p>指尖上的艺术，李炎与掐丝珐琅</p>
+                </div>
+            </a>
+        </div> -->
+        <footer>
+            <p class="footer-a">
+                <a href="../sub/wangzhanditu.html">网站地图</a>|
+                <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+                <a href="../sub/lianxiwomen.html">联系我们</a>|
+                <a href="../sub/banquan.html">版权与免责声明</a>
+            </p>
+            <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+            <div id="logo">
+                <img src="../images/首页/纹样4.png">
+            </div>
+    </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

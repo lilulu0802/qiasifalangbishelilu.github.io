@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于珐琅</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/xueshu/lpage1.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+
+        .box {
+            width: 1200px;
+            background-color: rgba(211, 196, 159, 0.2);
+            margin: 50px auto;
+            padding: 20px 30px 40px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+
+        h1 {
+            font-family: 宋体;
+            color: #5f3221;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1::before {
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            margin-right: 30px;
+            background-image: url(../images/_祥云\ -\ 副本.png);
+            background-size: cover;
+        }
+
+        h1::after {
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            background-image: url(../images/_祥云.png);
+            margin-left: 30px;
+            background-size: cover;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #5f3221;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5f3221;
+        }
+
+        footer {
+            width: 100vw;
+            margin: 40px auto 0;
+            padding-bottom: 40px;
+            background-image: url(../images/首页/底纹3.png);
+            background-size: cover;
+            color: #ede2d5;
+            padding-top: 5px;
+        }
+
+        footer img {
+            width: 60px;
+            height: 60px;
+        }
+
+        #logo {
+            width: 60px;
+            height: 60px;
+            margin: 40px auto 0;
+        }
+
+        .footer-a {
+            margin: 40px auto 20px;
+            width: 555px;
+        }
+
+        footer a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: #ede2d5;
+        }
+
+        footer a:hover {
+            cursor: pointer;
+            color: #801323;
+        }
+
+        section {
+            width: 1200px;
+            margin: 30px auto 0;
+        }
+
+        section a {
+            color: #333;
+            text-decoration: none;
+            font-family: "宋体";
+            font-size: 16px;
+        }
+
+        section a:hover {
+            color: #b80233;
+        }
+        h2{
+            color: #333;
+            font-family: 宋体;
+            margin: 10px 0;
+        }
+        h3{
+            color: #333;
+            font-family: 宋体;
+            margin: 10px 0;
+        }
+        .box p{
+            text-indent: 2em;
+            line-height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../index.html">首页</a>
+        <i>></i>
+        <a href="../sub/banquan.html">关于珐琅</a>
+    </section>
+    <div class="box">
+        <h1>关于中国掐丝珐琅</h1>
+        <p>掐丝珐琅画，顾名思义，是以珐琅为材料的绘画种类。珐琅是将经过粉碎研磨的釉料施涂在金属表面进行装饰的一种工艺，珐琅工艺的历史十分悠久，关于珐琅的起源有两种说法，一种说法是在国内，另一种说法是在国外。“国内说”的最直接依据是春秋时期的越王勾践剑剑把上就出现了嵌有珐琅的釉料。由此可见在这个时期，国内便已经出现了珐琅工艺。不仅如此，一些汉代的铜壶上也出现了珐琅工艺的装饰，唐代的铜镜上也有许多珐琅工艺的纹样。由此，一部分专家认为珐琅工艺确实是起源于中国。但是这个说法未能得到大家的一致认同，于是便有了现在主流的“国外说”。1200年的迈锡尼时期，研究人员于塞浦路斯的一座古墓里发现了掐丝珐琅工艺的戒指，是目前发现的最早的掐丝珐琅工艺器物。在早期发现的珐琅器中，都是器物局部采用了珐琅工艺，而随着珐琅工艺的逐步成熟，珐琅镶嵌才逐渐取代了宝石等传统镶嵌装饰品。到了罗马以及拜占庭时期，珐琅工艺品已经十分广泛了，碗、碟、盘等日常用品以及手镯、头冠等首饰都已经应用了珐琅工艺。</p>
+        <p>根据制作工艺，珐琅大致可分为掐丝珐琅、内填珐琅(即嵌胎珐琅)、画珐琅和透明珐琅等。掐丝珐琅和内填珐琅的历史十分悠久，掐丝珐琅和内填珐琅器物实物应在唐代传入我国，但真正在国内制作应该是元代成吉思汗时期，他将大食(古代对阿拉伯各地区的代称)工匠俘虏押回国内，教会中原工匠们制作珐琅器，当时的掐丝珐琅被大众称为“鬼国嵌”“大食窑”。到明代，宫廷中掐丝珐琅器的应用十分广泛，景泰年间掐丝珐琅工艺达到鼎盛，也就是俗称的“景泰蓝”。在此之后，“景泰蓝”就成了铜胎掐丝珐琅器的代称，而画珐琅出现的时期较晚，于15世纪中叶在欧洲的弗兰德斯地区发明，15世纪末在法国中西部里摩居以内填珐琅工艺为基础，发展成画珐琅重镇。16世纪，画珐琅由欧洲商人及传教士经广东传入中国，广东称画珐琅为“烧青”或“广珐琅”“洋珐琅”。透明珐琅于13世纪末起源于意大利，清乾隆时期制造的一批“广珐琅”是我国可查到的第一批透明珐琅器。在透明珐琅器中，无胎体掐丝透明珐琅工艺与金属胎透明珐琅工艺属于代表类别。</p>
+        <p>掐丝珐琅器的兴起时期是明代宣德年间。因“宣德铜炉”铸造的盛行，当时的宫廷非常注重铜的冶炼技术，所以到宣德年间，铜的加工铸造技术已经到达了巅峰，掐丝珐琅技术也随之发展。在珐琅技术传入中国时，釉彩颜色只有蓝、绿、黄、黑白几种，到宣德年间已经发展出暖色珐琅釉彩。到景泰年间，因明王朝处于动荡时期，朝野上下都比较向往国泰民安、政治清明的景象，所以景泰帝选择使用蓝色作为掐丝珐琅器的主要色调，在视觉上缓解了国民的审美疲劳。明代景泰蓝兴盛时期，也产生了新的绘画形式，即掐丝珐琅画，也可称作景泰蓝金丝彩釉画、彩砂画、金丝彩砂画、金丝画、金丝沙画等。但当时的掐丝珐琅画是依附于器物，且多以图案的形式而存在。在明代景泰蓝器物图案中，比较常见的为动植物，有龙戏珠、夔龙、夔凤等吉祥图案，表达了一种吉祥美好的寓意;也有祥云、火焰等表现道、佛教内容的图案，反映了宗教的盛行。植物多为传统缠枝莲等，大明莲纹样也发展得趋于成熟，植物图案多是表达一种精神意象。</p>
+        <p>清代是景泰蓝发展的又一鼎盛时期，康熙年间，景泰蓝的风格比较多变，画珐琅技术也是在此时由法国经海路传到广东的。清代专门制造皇家用品的机构叫作造办处，造办处中又有专门制作景泰蓝的部门———珐琅作。到此时期，景泰蓝工艺仍然沿袭了明代的式样，但颜色更加纯正，掐丝也更加细致。到乾隆时期，景泰蓝与雕漆、金漆镶嵌等工艺的发展达到了空前的繁荣，景泰蓝器物几乎涉及各个使用途。清中期国力强盛，工艺美术的发展有政府的财力支持，故许多种类的发展都得到了很大进步。这个时期制作景泰蓝工艺品使用的材料分为上、中、下三等，上等为金胎金丝，中等为银胎银丝，下等为铜胎铜丝。在釉彩颜色的选择上加入了明黄、淡粉等颜色，使整个工艺品看起来更加明快、奢华。景泰蓝制品表面上的图案也比明代的种类更加繁多，纹样更加细致，花鸟虫草的图案更加丰富多彩，龙凤等吉祥图案的形象也更加生动有趣。此时期还出现了掐丝制作历代文人字画的作品，如清代乾隆年制的掐丝珐琅山水人物百宝箱，以铜为胎，蓝珐琅为地，器物表面加以掐丝，上有亭台楼阁、人物山水等，可看作是掐丝珐琅画发展的又一时期。乾隆时期后，清代国力衰落，掐丝珐琅的发展也逐渐走向没落。直到20世纪60年代，掐丝珐琅器艺人的文化修养和手工技艺都得到了很大提升，景泰蓝也重新开始兴盛起来。</p>
+        <p>虽然自景泰蓝诞生之时起，就有在珐琅器表面作画的传统，但明清两代的掐丝珐琅画仍然是依附于珐琅器而存在的，中华人民共和国成立后的20世纪60～70年代，掌握技术的民间艺人制作出一部分精美的掐丝珐琅壁画作品，掐丝珐琅绘画才脱胎于掐丝珐琅器作为独立的画种而存在，所以掐丝珐琅画是一种古老而又年轻的绘画种类。</p>
+        <p>掐丝珐琅画脱胎于传统的景泰蓝工艺，将掐丝珐琅技术移到了画板上，借鉴了传统景泰蓝工艺的技术，以金属丝为线条，用砂、石着色绘制，后经抛光打磨而成。掐丝珐琅画成品柔美高雅，线条细致利落，具有十分强的抗氧化能力，能在长时间内保持良好的品质，这是油画、国画等画种都达不到的程度。掐丝珐琅画的制作步骤十分繁杂，要经过图案设计、落料、成型、掐丝、点蓝、上底色、粗磨、补色、细磨、再补色、上光等十多道工序、工艺精工细作而成。所有的工序都要经过手工制作，不能以机械代替，这也是掐丝珐琅画的魅力所在。
+
+        </p>
+        <p>
+            掐丝珐琅画自依附在景泰蓝器物之上的阶段就使用了传统的绘画技法，随着现代科技的发展，掐丝珐琅画也逐渐融合了油画、水彩等技巧，在国内国际都得到了一致的肯定。在国内，掐丝珐琅画分为南北两个派别，北派指北京，南派则指江苏常州。北京掐丝珐琅画通常画幅较大，在上海举办的首届中国国际进口博览会会场上过厅大墙上，有一幅来自北京市珐琅厂的大型掐丝珐琅画《三山五园》，画面将古城的青山秀水特征丝毫不落地展现给群众，色彩丰富，浓淡相宜，又展示出古都北京的传统文化特征，具有很强的地域性特征。而常州掐丝珐琅画是常州地区具有鲜明地方特色的一个美术品种，起源于清咸丰九年，为常州黄氏家族始创，新中国成立以后，黄氏家族的作品《性》《梦》相继获得第二届中国工艺美术大师精品展银奖，在国际上也备受赞誉。
+        </p>
+        <p>
+            在经济飞速发展的今天，工业污染常常危害着人们的生活。经过借鉴传统的景泰蓝工艺，新的掐丝珐琅画品种———掐丝珐琅炭画出现了，它以活性炭为原材料，融合了传统掐丝珐琅画的作画工艺，集净化、美化、艺术化为一体，在供人观赏的同时也可以净化空气。这无疑是掐丝珐琅画发展的一大步，在科技发展日新月异的时代，任何传统工艺想要保持生命力，不被时代所埋没，都要处理好传统与创新发展的关系，最大限度地发挥其价值。掐丝珐琅画具有两大特性，即工艺性和绘画性。但当前的掐丝珐琅绘画大多侧重于工艺性，而忽略了绘画性，将其当作普通的装饰画发展，这无疑是对其的一种不公平。早在掐丝珐琅画还未脱胎于景泰蓝时，其图案的绘画性还保留得很好，若其两种特性协同发展，才能做到作品的形、神具备，从而迎来更广阔的发展空间。
+        </p>
+        <p>
+            景泰蓝制作工艺自从国外传入开始，在数百年间得到了不断的发展，给后人留下了一批包括珐琅器和珐琅画在内的极其珍贵的艺术品，未来我们要将这种中华传统工艺不断继承和发扬下去，使它继续成为当代中国艺术中的一颗璀璨明珠。由景泰蓝发展而来的掐丝珐琅画则是我国各种艺术画种中的重要组成部分，其承载的掐丝珐琅工艺是我国几百年来的艺术瑰宝，只有将古老的掐丝珐琅工艺和绘画完美结合，才能最大限度发挥出掐丝珐琅画的艺术之美，从而将掐丝珐琅画这一古老而又年轻的艺术形式发扬起来。
+        </p>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珐琅文创——餐饮具系列</title>
+    <link rel="stylesheet" href="../../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../../css/gewuchuanxin/page.css">
+    <link rel="stylesheet" href="../../js/script.js">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../../images/背景纹理03.jpg);
+        }
+        .boxone {
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, #b68d4c, #946243)
+        }
+
+        .card {
+            /* 相对定位 */
+            position: relative;
+            width: 300px;
+            height: 450px;
+            margin: 20px;
+            background-color: #c1a87e;
+            border-radius: 20px;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 弹性布局 */
+            display: flex;
+            /* 元素纵向排列 */
+            flex-direction: column;
+            /* 居中 */
+            align-items: center;
+            color: #fff;
+            /* 阴影 */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            /* 不让其被挤压 */
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="../lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="../lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="../lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="../falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="../falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="../falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="../falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="../falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="../falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="../wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="../wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="../wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="../ziyuan.html#h1">展览</a></li>
+                        <li><a href="../ziyuan.html#h2">影音</a></li>
+                        <li><a href="../ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="../xueshu.html#h1">论坛</a></li>
+                        <li><a href="../xueshu.html#h2">调研</a></li>
+                        <li><a href="../xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../../index.html">首页</a>
+        <i>></i>
+        <a href="../../sub/gewuchuangxin.html">格物创新</a>
+        <i>></i>
+        <a href="../../sub/gewuchuanxin/page3.html">珐琅文创餐饮具系列</a>
+    </section>
+    <div class="box">
+        <h1>十二花神系列掐丝珐琅——玉簪餐饮具</h1>
+        <div class="boxone">
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/玉簪01.jpg" alt=""></div>
+                <h3>花韵珐琅玉簪勺</h3>
+                <p>勺头呈花瓣形，主体为白色瓷面，其上以掐丝珐琅工艺绘就一朵玉簪花，粉色花瓣搭配蓝绿色叶片，栩栩如生。花朵旁配有书法文字及红色印章图案，增添文化韵味。勺头边缘以铜色勾勒，饰有蓝黑色繁复花纹，勺柄同样饰有精致花卉图案，整体古典雅致，工艺精湛。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/玉簪02.jpg" alt=""></div>
+                <h3>蓝韵簪花・掐丝珐琅玉簪花瓷杯</h3>
+                <p>杯子杯口呈花瓣状，线条优美。杯身主体为深蓝色，以掐丝珐琅工艺装饰着多彩的玉簪花图案，花朵有白色、黄色、粉色等，搭配绿色枝叶，色彩鲜艳且过渡自然。边缘处饰有精致的金色花纹，底座同样有精美纹饰，整体古典优雅，工艺细腻，彰显独特韵味。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/玉簪03.jpg" alt=""></div>
+                <h3>翠韵簪花・掐丝珐琅玉簪花圆盘</h3>
+                <p>首饰以金色链条串联，设计精巧。主体是一朵色彩斑斓的牡丹，粉色与蓝色花瓣运用掐丝珐琅工艺，层次分明，花蕊镶嵌红色宝石，搭配金色花丝，华丽夺目。链条上点缀着精致小珠与宝石，末端配饰同样采用掐丝珐琅，饰有红色宝石与花纹，整体古典雅致。
+                </p>
+            </div>
+        </div>
+        <h1>十二花神系列掐丝珐琅——桂花餐饮具</h1>
+        <div class="boxone a">
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/桂花01.jpg" alt=""></div>
+                <h3>蓝韵桂香・掐丝珐琅桂花餐勺</h3>
+                <p>勺头呈圆形，盘面以蓝色为底色，饰有金色几何纹样，其间以掐丝珐琅工艺点缀着黄色桂花图案，搭配绿色枝叶，生动逼真。勺柄修长，同样饰有蓝色与金色交织的精美花纹，整体风格古典雅致，工艺精湛，将传统元素与实用功能完美融合。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/桂花02.jpg" alt=""></div>
+                <h3>蓝釉金桂・掐丝珐琅桂花瓷杯</h3>
+                <p>身以蓝色为基调，运用掐丝珐琅工艺，饰有黄色桂花图案，搭配绿色枝叶，色彩明艳。杯身中部有一个较大的金色花卉浮雕装饰，凸显华丽质感。杯口与杯底边缘以金色勾勒，饰有精致花纹，整体古典雅致。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/桂花03.jpg" alt=""></div>
+                <h3>翠盘金英・掐丝珐琅桂花圆盘</h3>
+                <p>圆盘以浅绿色为底色，盘面中央以掐丝珐琅工艺呈现出黄色桂花花卉图案，花朵搭配绿色枝叶，鲜活生动。盘身边缘装饰有精致繁复的深色花纹，其间点缀着多彩宝石，增添华丽感。整体设计古典雅致，工艺精湛，将传统工艺与装饰艺术完美融合，兼具观赏性与艺术性。
+                </p>
+            </div>
+        </div>
+        <h1>十二花神系列掐丝珐琅——菊花餐饮具</h1>
+        <div class="boxone b">
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/菊花01.jpg" alt=""></div>
+                <h3>蓝翠金菊・掐丝珐琅菊花餐勺</h3>
+                <p>勺头以清新的蓝绿色为底，运用掐丝珐琅工艺打造出金色菊花图案，花瓣线条细腻流畅，富有层次感，中心花蕊立体精致。勺柄修长，饰有金色几何与花卉纹样，与勺头风格呼应。整体色彩搭配和谐，工艺精湛，将传统工艺与餐具实用性完美融合。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/菊花02.jpg" alt=""></div>
+                <h3>翠韵金菊・掐丝珐琅菊花瓷杯</h3>
+                <p>杯身主体运用掐丝珐琅工艺，以深色调为底，饰有精美的黄色菊花图案，花瓣层次分明，花蕊细致入微。菊花图案周围环绕着精致的花纹装饰，色彩丰富，有绿色、蓝色等点缀其间。杯口与杯底边缘以金色勾勒，将传统菊花元素与掐丝珐琅工艺完美结合，散发着浓郁的古典韵味。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/菊花03.jpg" alt=""></div>
+                <h3>蓝釉金菊・掐丝珐琅菊花圆盘</h3>
+                <p>圆盘造型精美，盘沿呈花瓣状，线条优雅流畅。盘面以蓝色为底色，运用掐丝珐琅工艺，饰以金色菊花图案，花朵形态各异，搭配枝叶，栩栩如生。盘沿及分隔区域同样饰有精致的金色花纹与菊花图案，边缘以金色勾勒，整体工艺精湛，色彩搭配和谐。
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

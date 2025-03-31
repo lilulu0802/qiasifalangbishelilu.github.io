@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>格物创新</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/gewuchuangxin.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="box">
+        <section>
+            <a href="../index.html">首页</a>
+            <i>></i>
+            <a href="../sub/gewuchuangxin.html">格物创新</a>
+        </section>
+        <div class="boxone">
+            <div class="boxone-l"></div>
+            <img src="../images/文创周边/01.jpg" alt="">
+            <div class="boxone-r">
+                <h1>珐琅文创的意义</h1>
+                <div class="boxone-r-p">
+                    <p>掐丝珐琅作为国家级非物质文化遗产，通过文创产品（如钥匙扣、书签等）降低体验门槛，使传统工艺从“博物馆展品”变为“日常用品”。</p>
+                    <p>文创产品需要在传统工艺的基础上进行创新设计，通过简约设计将现代审美与传统元素相结合，创造出符合当代人需求和喜好的产品。这不仅推动了掐丝珐琅工艺的创新发展，还提升了消费者的审美水平。通过欣赏和使用这些文创产品，人们可以培养对美的感知和鉴赏能力，丰富精神文化生活。
+                    </p>
+                    <p>掐丝珐琅文创产品往往具有独特的文化内涵和情感价值，能够唤起人们对传统文化的情感共鸣。</p>
+                    <p>掐丝珐琅文创产品的开发和销售，为相关产业带来了新的经济增长点。从原材料采购、工艺制作到产品销售，形成了一条完整的产业链，带动了就业和经济发展。同时，文创产品的高附加值也为企业和创作者带来了可观的收益，激励更多人投身于文化创意产业。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="boxtwo">
+            <h1>十二花神系列掐丝珐琅文创</h1>
+            <div class="container">
+                <div class="park-item large-item" onclick="window.location.href='./gewuchuanxin/page1.html'">
+                    <h2>珐琅文创——服饰系列</h2>
+                </div>
+                <div class="container-bottom">
+                    <div class="park-item small-itema" onclick="window.location.href='./gewuchuanxin/page2.html'">
+                        <img src="../images/文创周边/纹样.png" alt="" class="img1">
+                        <h3>珐琅文创——首饰系列</h3>
+                    </div>
+                    <div class="park-item small-itemb" onclick="window.location.href='./gewuchuanxin/page3.html'">
+                        <img src="../images/文创周边/纹样.png" alt="" class="img1">
+                        <h3>珐琅文创——餐饮具系列</h3>
+                    </div>
+                    <div class="park-item small-itemc" onclick="window.location.href='./gewuchuanxin/page4.html'">
+                        <img src="../images/文创周边/纹样.png" alt="" class="img1">
+                        <h3>珐琅文创——工艺品系列</h3>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.querySelectorAll('.park-item').forEach(item => {
+                    item.addEventListener('click', function () {
+                        // In a real application, you would navigate to different pages
+                        alert(`即将跳转到: ${this.textContent}`);
+                        // window.location.href = 'your_page_url.html';
+                    });
+                });
+            </script>
+            
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../images/首页/纹样4.png">
+        </div>
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

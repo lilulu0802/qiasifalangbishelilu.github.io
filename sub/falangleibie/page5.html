@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>透明珐琅器</title>
+    <link rel="stylesheet" href="../../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../../js/script.js">
+    <link rel="stylesheet" href="../../css/falangleibie/page5.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 90%; margin: 0 auto;">
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="../lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="../lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="../lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="../falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="../falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="../falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="../falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="../falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="../falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="../wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="../wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="../wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="../ziyuan.html#h1">展览</a></li>
+                        <li><a href="../ziyuan.html#h2">影音</a></li>
+                        <li><a href="../ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="../xueshu.html#h1">论坛</a></li>
+                        <li><a href="../xueshu.html#h2">调研</a></li>
+                        <li><a href="../xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../index.html">首页</a>
+        <i>></i>
+        <a href="../../sub/falangleibie.html">珐琅类别</a>
+        <i>></i>
+        <a href="../../sub/falangleibie/page5.html">透明珐琅器</a>
+    </section>
+    <div class="container">
+        <div class="image-container">
+            <img src="../../images/珐琅类别/16.png" alt="">
+        </div>
+        <div class="title">透明珐琅器</div>
+        <h3>广珐琅八宝八仙纹盆</h3>
+        <div class="texta">
+            <div class="texta-l">
+                <p>透明珐琅器包括金属胎透明珐琅器和无胎掐丝透明珐琅器。金属胎透明珐琅器一般称为“透明珐琅器”，俗称“银蓝”或“烧银茎”。透明珐琅器起源于13世纪末由意大利工匠发明，14世纪法国巴黎出现多彩的透明珐琅器。中国最早的实物是清雍正年间的银烧蓝五福捧寿八方盒，起源应不晚于17世纪末。乾隆年间，广州成为制作透明珐琅器的重要中心。
+                    制作工艺是将具有透明性的各种釉料涂饰在做过艺术加工的金胎、银胎（或铜镀银胎）上，经几次饶途烧结后、露出胎上的花纹。釉料一般用紫、蓝、绿、黄四色，可用单色，亦可用复色。
+                </p>
+                <p>器胎处理分錾花、锤花、或錾、锤兼用，或錾花之后再贴金片，或在透明珐琅上描金。银蓝釉料的烧结温度低于景泰蓝釉料，但其透明度和细腻程度却高于景泰蓝釉料。银蓝的最大特点在于烧完后不用磨光就具有平滑细腻、光亮如镜的自然美，这种工艺多用于花丝首饰、微章、标牌等工艺品。
+                </p>
+            </div>
+
+        </div>
+        <div class="textaboxi">
+            <div class="textabox">
+                <h4>中国发展</h4>
+                <p>硬透明珐琅：由广州生产，透明度极好，如晶莹闪烁的宝石，有蓝、绿、黄、红、紫等色，常用于制作面盆、攒盒、镜框、钟架等大型器物。</p>
+                <p>软透明珐琅：呈半透明状，光泽似水晶，有蓝、绿、紫、黄、粉红等色，各城镇银楼均可烧造，常制成银首饰，亦称银烧蓝、烧蓝或银蓝。 </p>
+                <h4>艺术特点</h4>
+                <p>透明度高：釉料具有良好的透明或半透明性，能透出胎底的浅刻纹饰，使器物呈现出独特的透视效果和立体感。</p>
+                <p>色彩丰富：有多种颜色可供选择，通过不同颜色的搭配和组合，可制作出色彩斑斓、绚丽多彩的作品。</p>
+                <p>纹饰精美：金属胎上的浅浮雕纹饰细腻精美，线条流畅，与透明珐琅釉相结合，产生出明暗浓淡的变化，使图案更加生动逼真。</p>
+            </div>
+            <span></span>
+            <div class="textabox">
+                <h4>透明珐琅器的代表作品丰富，以下是不同类型的代表：</h4>
+                <h5>清代广州硬透明珐琅器</h5>
+                <p>
+                    广珐琅八宝八仙纹盆：以宗教为题材，是清代皇帝赏赐西藏高僧的重要器物。盆上以蓝色为底色，施以金色纹路点缀，显得气派且奢华。
+                </p>
+                <p>透明珐琅贴金银箔杯碟：蓝色的透明珐琅部分，既能够看到蓝色透明珐琅之下银箔的图案，也能看到它上面金箔的图案，釉下和釉上颜色对比鲜明，工艺精湛。
+                    意</p>
+                <p>透明珐琅冰梅纹罐：罐口沿及下腹部为画珐琅工艺，绘冰梅纹、如意云头、燕叶纹。罐身运用广州地区独有的透明珐琅工艺，先施绿色高温透明珐琅釉，烧烤后用描金工艺绘制冰裂纹，并加点染、勾勒梅花图案。</p>
+                <h5>现代透明珐琅作品</h5>
+                <p>天珠灯：由方学斌带领团队制作，首次尝试在掐丝镂空球体上烧制透明珐琅，不开灯时古朴典雅，开灯则流光溢彩。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            const img = document.querySelector('.image-container img');
+            const h3 = document.querySelector('h3');
+            const title = document.querySelector('.title');
+            const text = document.querySelector('.texta');
+            const textaboxi = document.querySelector('.textaboxi');
+
+            setTimeout(() => {
+                img.style.opacity = '1';
+                img.style.transform = 'scale(1)';
+            }, 300);
+
+            setTimeout(() => {
+                h3.style.opacity = '1';
+                h3.style.transform = 'scale(1)';
+            }, 300);
+
+            setTimeout(() => {
+                title.style.opacity = '1';
+                title.style.transform = 'translateY(0)';
+            }, 1000);
+
+            setTimeout(() => {
+                text.style.opacity = '1';
+                text.style.transform = 'translateX(0)';
+            }, 1500);
+            setTimeout(() => {
+                textaboxi.style.opacity = '1';
+                textaboxi.style.transform = 'translateX(0)';
+            }, 1500);
+        };
+    </script>
+     <footer>
+        <p class="footer-a">
+            <a href="../../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

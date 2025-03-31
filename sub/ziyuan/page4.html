@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逐梦蓝彩 钟连盛景泰蓝艺术展</title>
+    <link rel="stylesheet" href="../../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../../css/ziyuan/page4.css">
+    <link rel="stylesheet" href="../../js/script.js">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="../lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="../lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="../lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="../falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="../falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="../falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="../falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="../falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="../falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="../wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="../wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="../wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="../ziyuan.html#h1">展览</a></li>
+                        <li><a href="../ziyuan.html#h2">影音</a></li>
+                        <li><a href="../ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="../xueshu.html#h1">论坛</a></li>
+                        <li><a href="../xueshu.html#h2">调研</a></li>
+                        <li><a href="../xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../../index.html">首页</a>
+        <i>></i>
+        <a href="../../sub/ziyuan.html">资源</a>
+        <i>></i>
+        <a href="../../sub/ziyuan/page4.html">逐梦蓝彩 钟连盛景泰蓝艺术展</a>
+    </section>
+    <div class="box">
+        <div class="boxone">
+            <div class="boxone-l">
+                <img src="../../images/资源/55.png" alt="">
+            </div>
+
+            <div class="boxone-r">
+
+                <div class="boxone-r-top">
+                    <h2>展览时间： 2024/06/06-2024/07/16</h2>
+                    <h1>逐梦蓝彩</h1>
+                    <h3>钟连盛景泰蓝艺术展</h3>
+                    <h4>中国工艺美术馆 中国非物质文化遗产馆四层 5号展厅</h4>
+                </div>
+                <div class="boxone-r-bottom">
+                    <p>6月17日，中国工艺美术大师、国家级景泰蓝非遗传承人钟连盛“逐梦蓝彩--钟
+                        连盛景泰蓝艺术展”在中国工艺美术馆 中国非物质文化遗产馆盛大开幕。</p>
+                    <p>展出的作品分为八大单元，内容精彩纷呈，包括“系出名门 一脉相承”、“艺以载道 器成经典”、“见证历史 国礼华章”、“革故鼎新 敦行致远”、“艺术不息 连盛九珍”、“以手传心 桃李天下”、“手作匠人 绘梦蓝彩”以及“影铸匠心 镌刻时光”，共展出100余件/套精美的景泰蓝艺术作品。每一单元都如同一篇章节，向观众们缓缓展开景泰蓝艺术的辉煌史册。</p>
+                    <p>在“逐梦蓝彩--钟连盛景泰蓝艺术展”里我们可以透过作品一窥钟连盛的心路历程与人生，感受到他四十六年如一日对这门古老艺术的热爱与执着。在这里，我们看到钟连盛先生不满足于遵循传统，而是勇于探索，将景泰蓝艺术推向新的高度。他的作品不仅是艺术创作的成果，更是时间与匠人情感的凝结。既有传统的韵味，又不乏现代的气息。</p>
+                </div>
+            </div>
+        </div>
+        <h1>展品</h1>
+        <div class="boxtwo">
+            <div class="boxtwo-top">
+                <div class="boxtwoa">
+                    <div class="h5">
+                        <h5>国泰民安瓶</h5>
+                    </div>
+                    <img src="../../images/资源/40.jpg" alt="">
+                </div>
+                <div class="boxtwoa">
+                    <div class="h5">
+                        <h5>岁寒三友瓶</h5>
+                    </div>
+                    <img src="../../images/资源/41.jpg" alt="">
+                </div>
+                <div class="boxtwoa">
+                    <div class="h5">
+                        <h5>盛世欢歌瓶</h5>
+                    </div>
+                    <img src="../../images/资源/42.jpg" alt="">
+                </div>
+            </div><div class="boxtwo-top">
+                <div class="boxtwoa">
+                    <div class="h5">
+                        <h5>钟表有面</h5>
+                    </div>
+                    <img src="../../images/资源/43.jpg" alt="">
+                </div>
+                <div class="boxtwoa">
+                    <div class="h5">
+                        <h5>繁花似锦圆盘和瓶</h5>
+                    </div>
+                    <img src="../../images/资源/44.jpg" alt="">
+                </div>
+                <div class="boxtwoa">
+                    <div class="h5">
+                        <h5>夔龙纹对罐</h5>
+                    </div>
+                    <img src="../../images/资源/45.jpg" alt="">
+                </div>
+            </div>
+            <div class="boxtwo-bottom">
+                <div class="boxtwoaa">
+                    <div class="h5a">
+                        <h5>烟具套装</h5>
+                    </div>
+                    <img src="../../images/资源/34.jpg" alt="">
+                </div>
+                <div class="boxtwoaa">
+                    <div class="h5a">
+                        <h5>争韵系列</h5>
+                    </div>
+                    <img src="../../images/资源/35.jpg" alt="">
+                </div>
+                <div class="boxtwoaa">
+                    <div class="h5a">
+                        <p>聚宝盆 八宝吉祥</p>
+                    </div>
+                    <img src="../../images/资源/36.jpg" alt="">
+                </div>
+                <div class="boxtwoaa">
+                    <div class="h5a">
+                        <h5>聚宝盆 连年有余</h5>
+                    </div>
+                    <img src="../../images/资源/37.jpg" alt="">
+                </div>
+                <div class="boxtwoaa">
+                    <div class="h5a">
+                        <h5>连年有余</h5>
+                    </div>
+                    <img src="../../images/资源/38.jpg" alt="">
+                </div>
+                <div class="boxtwoaa">
+                    <div class="h5a">
+                        <h5>锦绣北京</h5>
+                    </div>
+                    <img src="../../images/资源/39.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

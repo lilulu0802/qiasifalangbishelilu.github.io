@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022郑州非遗年度人物系列专访：指尖上的艺术，李炎与掐丝珐琅</title>
+    <link rel="stylesheet" href="../../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../../css/xueshu/fpage.css">
+    <link rel="stylesheet" href="../../js/script.js">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="../lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="../lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="../lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="../falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="../falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="../falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="../falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="../falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="../falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="../wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="../wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="../wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="../ziyuan.html#h1">展览</a></li>
+                        <li><a href="../ziyuan.html#h2">影音</a></li>
+                        <li><a href="../ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="../xueshu.html#h1">论坛</a></li>
+                        <li><a href="../xueshu.html#h2">调研</a></li>
+                        <li><a href="../xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../../index.html">首页</a>
+        <i>></i>
+        <a href="../../sub/xueshu.html">学术</a>
+        <i>></i>
+        <a href="../../sub/xueshu.html#h3">访谈</a>
+    </section>
+    <div class="box">
+        <h1>2022郑州非遗年度人物系列专访：指尖上的艺术，李炎与掐丝珐琅</h1>
+        <div class="p">
+            <p class="p1">来源：“郑州非物质文化遗产协会” 微信公众号</p>
+            <p class="p2">2023.04.28</p>
+        </div>
+        <div class="slider">
+            <img src="../../images/学术/ft01.png" alt="" class="active">
+            <img src="../../images/学术/ft02.png" alt="">
+            <img src="../../images/学术/ft03.png" alt="">
+            <img src="../../images/学术/ft04.png" alt="">
+            <img src="../../images/学术/ft05.png" alt="">
+            <img src="../../images/学术/ft06.png" alt="">
+            <img src="../../images/学术/ft07.png" alt="">
+            <img src="../../images/学术/ft08.png" alt="">
+            <div class="arrow prev">&#10094;</div>
+            <div class="arrow next">&#10095;</div>
+        </div>
+        <div class="thumbnails">
+            <img src="../../images/学术/ft01.png" alt="" class="active">
+            <img src="../../images/学术/ft02.png" alt="">
+            <img src="../../images/学术/ft03.png" alt="">
+            <img src="../../images/学术/ft04.png" alt="">
+            <img src="../../images/学术/ft05.png" alt="">
+            <img src="../../images/学术/ft06.png" alt="">
+            <img src="../../images/学术/ft07.png" alt="">
+            <img src="../../images/学术/ft08.png" alt="">
+        </div>
+        
+    
+        <script>
+            const sliderImages = document.querySelectorAll('.slider img');
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            let currentIndex = 2;
+    
+            function showImage(index) {
+                sliderImages.forEach((img, i) => {
+                    if (i === index) {
+                        img.classList.add('active');
+                    } else {
+                        img.classList.remove('active');
+                    }
+                });
+            }
+    
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % sliderImages.length;
+                showImage(currentIndex);
+            }
+    
+            function prevImage() {
+                currentIndex = (currentIndex - 1 + sliderImages.length) % sliderImages.length;
+                showImage(currentIndex);
+            }
+    
+            prevButton.addEventListener('click', prevImage);
+            nextButton.addEventListener('click', nextImage);
+    
+            thumbnails.forEach((thumb, index) => {
+                thumb.addEventListener('click', () => {
+                    currentIndex = index;
+                    showImage(currentIndex);
+                });
+            });
+    
+            showImage(currentIndex);
+        </script>
+        <div class="texta">
+            <p>
+                说起掐丝珐琅，大家联想到的可能都是些老气横秋的古代艺术品，但是来自郑州市的非遗项目掐丝珐琅传承人李焱，却用现代设计的审美，将掐丝珐琅做成了广受大众欢迎、充满时尚气息的文创产品。
+            </p>
+            <p>今天让我们一起走近2022郑州非遗年度人物、郑州市非遗项目掐丝珐琅传承人李焱老师，感受巧夺天空的指尖艺术，了解她对这门传统艺术在郑州市的传承与普及所取得的积极成果。</p>
+            <p>李焱是一名具有人民教师和郑州市非物质文化遗产掐丝珐琅技艺代表性传承人的双重身份的代表性传承人。她勇于尝试在掐丝珐琅的形式上做出创新，原本只用于花瓶器皿的掐丝珐琅不再“高高在上”，完全击碎掐丝珐琅“老气庸俗”的固有印象，作品可爱又复古，带来前所未有的新鲜感。同时也做出了一些不同于传统的改变，比如，加入了其他材料：金属、金粉、树脂、玻璃等等。既有水彩画的空灵的通透，亦有油画般的厚重华美。</p>
+            <p>除了在艺术手法的创新，李焱老师还专注于于掐丝珐琅这门艺术的普及与传承工作。2012年，她在郑州枫杨外国语学校成立掐丝珐琅艺术坊，每周定时开展活动，将自己的技艺毫无保留的传授给一届届学生，真正实现非遗进校园、非遗扎根校园。</p>
+            <p>在日常非遗教学过程中，她不断总结经验教训，编写《掐丝珐琅制作技艺校本课程》和《传续还原掐丝珐琅制作技艺》教学设计、纲要、教案，形成系统的有计划、有方案、有步骤，可实施、可检验、可落地，成为非遗活动在学校开发实施的典型样板。</p>
+            <p>为了让更多的年轻人了解非遗，爱上非遗，在核心技艺保持不变的情况下，李炎老师从创作的题材、表现形式上进行创新，更符合今天的审美，开发非遗生活用品、文创用品，实现文化与现代生活相结合，让非遗技艺走进生活，以多元化、多形式、多载体的鲜活的呈于当下。</p>
+            <p>校园工作之外，李炎积极参加社会各界非遗传播工作，录制国博《指尖上中华》节目、郑州市非遗小课堂，为全国第十一届民族运动会制作掐丝珐琅会徽、吉祥物，在河南博物院和手工艺会展上做民族技艺公益宣讲，与此同时，组织学生创作了郑州地标系列、红色系列、民俗文化系列、郑州古八大景、二十四节气、国色芳华等等反映社会风尚和地域历史文化的作品，带学生参加非遗讲座、展示、宣传活动，让学生学有所展、学有所获。</p>
+            <p>非遗技艺，薪火相传，有了工匠精神，艺术才能保存下来，一代一代的传承。李炎老师的努力，让古老的手艺落地生根，走进大众生活，让更多年轻人爱上非遗、传承非遗，让非遗更好展现中国文化永久魅力和时代风采。</p>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
+</html>

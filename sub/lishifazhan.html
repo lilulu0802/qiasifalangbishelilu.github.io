@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史发展</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/lishifazhan.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../index.html">首页</a>
+        <i>></i>
+        <a href="../sub/lishifazhan.html">历史发展</a>
+    </section>
+    <div class="onebox">
+        <img src="../images/历史发展/01.jpg" alt="">
+        <div class="onebox-r" id="h1">
+            <div class="onebox-r2">
+                <h1>起源于传入</h1>
+                <p>掐丝珐琅工艺是我国传统工艺美术之一。景泰蓝（铜胎掐丝珐琅）的名号广为人知，正是景泰蓝的响亮名声导致许多人认为掐丝珐琅工艺源于明景泰年间。其实，中国掐丝珐琅工艺起源比明代更早，而这门工艺的发源地也来自海外，中国金属胎起线珐琅工艺制品是在吸收外来文化的基础上发展起来的，融入了中国特色。
+                </p>
+                <p>据史料分析，掐丝珐琅工艺最早起源于波斯（今伊朗），时间大约在 5~6世纪
+                    。这种工艺最初用于制作精美的金属装饰品，后来逐渐传播到阿拉伯地区和东罗马帝国等地。掐丝珐琅传入中国，主要得益于当时蒙古帝国与西亚地区的频繁交流。元代时期，掐丝珐琅被称为“大食窑器”，并开始在国内推广制作。
+                </p>
+                <a href="../sub/lishiqiyuanyuchuanru/page1.html">了解更多</a>
+            </div>
+        </div>
+    </div>
+    <h1 id="h2">中国掐丝珐琅的发展历程</h1>
+    <div class="twobox">
+        <div class="timeline">
+            <div class="timeline-item" data-content="one">
+                <h2>端庄典雅的元代掐丝珐琅</h2>
+                <p>13世纪中叶(忽必烈西征)</p>
+            </div>
+            <div class="timeline-item" data-content="two">
+                <h2>逐渐世俗化的明代掐丝珐琅</h2>
+                <p>宣德盛世</p>
+            </div>
+            <div class="timeline-item" data-content="three">
+                <h2>迎来巅峰的清代掐丝珐琅</h2>
+                <p>康乾盛世</p>
+            </div>
+            <div class="timeline-item" data-content="four">
+                <h2>趋于市场化的近现代掐丝珐琅</h2>
+                <p>1840年之后</p>
+            </div>
+        </div>
+
+        <div id="one" class="content">
+            <div>
+                <p>虽然中国掐丝珐琅工艺的起源尚存争议，但对于故宫博物院所藏的六件掐丝珐琅器，主流观点倾向于为元代所制。元代掐丝珐琅器较少，且均无元代的时代款识，所以难以精准确定制作的具体时间。不过，根据故宫博物院所藏的几件元代掐丝珐琅器可以观察中国早期掐丝珐琅器的工艺特征。
+                </p>
+                <p>元代掐丝珐琅器胎体厚重，器型端庄，多是瓶、罐、盒等常见摆设器。如，元掐丝珐琅缠枝莲纹藏草瓶以浅蓝色为色地，釉色以蓝、红、绿、黄、白为主，釉料细腻，质地光洁，色调明亮，具有宝石般半透明的光泽。此瓶的胎体较为厚重，器物造型周正大气，胎体表面的掐丝线条流畅舒展，具有元代掐丝珐琅器的典型特征。在装饰纹饰方面，缠枝莲纹是元代掐丝珐琅最具代表性的装饰图案，一般作为主要装饰图案，位于视觉中心。元代掐丝珐琅器的图案纹饰布局疏朗大方，线条奔放有力，枝蔓伸展自如，器物的颈下和足上常饰以莲花瓣或垂云开光，使器物愈显稳定、富丽。
+                </p>
+            </div>
+            <div class="contentimg">
+                <img src="../images/历史发展/掐丝珐琅缠枝莲纹鼎式炉.png" alt="">
+                <img src="../images/历史发展/掐丝珐琅缠枝莲纹香薰.png" alt="">
+                <img src="../images/历史发展/掐丝珐琅缠枝莲纹藏草瓶.png" alt="">
+            </div>
+            <div class="contenth">
+                <h3>掐丝珐琅缠枝莲纹鼎式炉</h3>
+                <h3>掐丝珐琅缠枝莲纹香薰</h3>
+                <h3>掐丝珐琅缠枝莲纹藏草瓶</h3>
+            </div>
+        </div>
+        <div id="two" class="content">
+            <div>
+                <p>掐丝珐琅工艺在明代发展的显著时代特征是年代款识的出现和装饰图案主题的世俗化。宣德盛世的到来掀起了掐丝珐琅工艺发展的一个新高潮，现今发现年代最早的具有年代款识的掐丝珐琅器的便是宣德款，正是在宣德之后，掐丝珐琅器才普遍具有款识。宣德年间的掐丝珐琅仍延续了元代缠枝莲纹的装饰纹样，但开始出现龙凤呈祥、狮子滚绣球等世俗主题的装饰内容，这与当时的社会背景有着紧密联系。在明代社会稳定影响下，工艺品出现世俗化的装饰主题、纹样，装饰色彩也更加丰富、鲜明。
+                </p>
+                <p>景泰款的掐丝珐琅器虽然数量众多，但实际上明景泰年间制作的掐丝珐琅器数量较少，质量也并非掐丝珐琅工艺的巅峰之作。大多数标有景泰款的掐丝珐琅器是后来改款或仿造的，并不能代表景泰年间掐丝珐琅工艺的真实水平。景泰时期与宣德时期制作的掐丝珐琅器装饰图案风格有明显区别，釉料色彩纯正但表面缺乏光泽。明晚期嘉靖、万历二朝的掐丝珐琅风格则开始趋于繁复，这与当时趋繁的审美风尚有关，不仅体现在掐丝珐琅图案变得复杂，而且体现在珐琅色釉种类随之增多。自万历之后还出现了仿生造型的掐丝珐琅器，体现了明晚期掐丝珐琅工艺的创新发展。随着明王朝的衰落，掐丝珐琅的工艺水平也随之下滑。
+                </p>
+                <div class="contentimgtwo">
+                    <img src="../images/历史发展/明宣德铜胎掐丝珐琅云龙纹钵01.jpg" alt="">
+                    <img src="../images/历史发展/明宣德铜胎掐丝珐琅云龙纹钵02.jpg" alt="">
+                    <img src="../images/历史发展/明宣德铜胎掐丝珐琅云龙纹钵03.jpg" alt="">
+                    <img src="../images/历史发展/明宣德铜胎掐丝珐琅云龙纹钵04.jpg" alt="">
+                </div>
+                <h3>明宣德铜胎掐丝珐琅云龙纹钵</h3>
+            </div>
+        </div>
+        <div id="three" class="content">
+            <p>清代的康乾盛世使一度停滞不前的掐丝珐琅工艺随着当时社会经济、文化、手工业的发展而再度兴盛。由于康熙帝个人对珐琅器的喜好，他在康熙十九年（1680）下旨成立造办处以替代明代的御用监，特为清宫制造皇家御用品。此时，珐琅工艺断档多年，故康熙时期的掐丝珐琅又分为青涩和成熟两个阶段。康熙早期的掐丝珐琅器由于烧造技术不成熟，导致出现釉色干涩灰暗的弊病，这也是此时掐丝珐琅器的鲜明特征。随着工艺水平的不断提高，康熙后期的掐丝珐琅器逐渐解决了干涩晦暗的问题，釉料色泽变得纯正光亮。
+                如果说康熙时期为掐丝珐琅工艺走向巅峰打下了基础，那么雍正时期便是走向顶点的过渡时期。雍正帝对于掐丝珐琅的热爱并不及画珐琅等其他门类的珐琅制品，故而雍正时期的掐丝珐琅器数量不多。目前发现带有雍正年代款识的掐丝珐琅器仅有“台北故宫博物院”藏清雍正掐丝珐琅凤耳豆。此器仿青铜器豆形制，器表除盖、腹与圈足上共六圈掐丝回纹，满饰大小圆圈纹，饰绿色釉质，可见其造型与工艺的成熟。
+            </p>
+            <p>经过康、雍二朝，乾隆时期的中国掐丝珐琅工艺达到了巅峰。据档案记载，造办处制作了数量可观的珐琅器，种类十分丰富，包括宫廷典章用品、佛教用品、生活用品、陈设品以及文房用品等。其中，乾隆三十九年（1774）和乾隆四十七年（1782），乾隆帝先后两次下旨烧造大型掐丝珐琅佛塔。烧成的佛塔造型精致端正，色彩丰富和谐，釉料饱满有光泽，如此体量的珐琅塔显示出乾隆时期经济的富足与掐丝珐琅工艺的杰出成就。乾隆时期的掐丝珐琅不仅器型多、体量大，而且掐丝珐琅器风格也具有典型的时代特征。从造型上说，当时非常流行仿古和仿生造型，这一时期制作了大量这些造型的掐丝珐琅器。仿古珐琅器是仿照商周青铜器器型，如尊、觥、甗、簠等。仿生珐琅器则是模仿具有吉祥寓意的动物造型，多仿照鸡、鸭（凫）、牛等。在色彩上，掐丝珐琅器色彩种类相较之前变得更为丰富，甚至出现具有时代标志的粉色。随着康乾盛世的落幕，清王朝发展的拐点也随之而来，经济的萧条使掐丝珐琅的发展逐渐放缓。嘉庆、道光、咸丰、同治四朝制造的掐丝珐琅工艺开始衰退，作品数量较少，几乎呈停滞状态。
+            </p>
+            <a href="../sub/lishiqiyuanyuchuanru/page2.html">查看更多</a>
+        </div>
+        <div id="four" class="content">
+            <div>
+                <p>1840年之后，具有鲜明民族风格的掐丝珐琅受到西方人的青睐和追捧，加之洋务运动后西方技术、人才、资金的引进，中国民族企业逐渐产生，掐丝珐琅便在这样的形势下再度兴起。不过，这次兴起让掐丝珐琅工艺从皇家宫廷走向更加市场化的民间。当时，北京、广州、扬州等地出现专营掐丝珐琅的民间商号，如“老天利”“德兴成”“宝华生”“志远堂”等。这一时期的掐丝珐琅器因追求商品利润降低成本，故而这一时期的掐丝珐琅器胎体比较轻薄，掐丝工艺非常细腻，企图用精细的工艺弥补材料的不足，呈现出一股细弱之风的时代特征。
+                </p>
+                <p>在国家遭受磨难之时，掐丝珐琅工艺也遭受重创，直到中华人民共和国成立后才逐渐恢复生机。1950年6月，为扶持北京传统手工业，北京市政府成立了特种工艺品公司。1956年1月，由造办处的“珐琅作”、42家私营珐琅作坊合并建成了北京珐琅厂，掐丝珐琅才在新中国踏上新征程。之后，随着市场经济的发展与设计美学的影响，掐丝珐琅工艺的形式与载体越来越丰富多变，不仅出现传统造型的掐丝珐琅器型制品，而且逐渐发展出掐丝珐琅首饰、掐丝珐琅服饰、掐丝珐琅文创产品等创新制品。
+                </p>
+            </div>
+            <div class="contentimgfour">
+                <div class="contentimgfour-left">
+                    <img src="../images/历史发展/老天利01.jpg" alt="">
+                    <img src="../images/历史发展/老天利02.jpg" alt="">
+                </div>
+                <div class="contentimgfour-right">
+                    <img src="../images/历史发展/志远堂01.jpg" alt="">
+                    <img src="../images/历史发展/志远堂.jpg" alt="">
+                </div>
+            </div>
+            <div class="contenth">
+                <h3>老天利 缠枝花卉纹鎏金狮扭熏炉</h3>
+                <h3>志远堂 铜掐丝珐琅福寿双全</h3>
+            </div>
+        </div>
+
+        <script>
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const contents = document.querySelectorAll('.content');
+
+            // 初始显示第一个时间轴画面
+            document.getElementById('one').style.display = 'block';
+            timelineItems[0].classList.add('active');
+
+            timelineItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    // 移除所有节点的active类
+                    timelineItems.forEach(ti => ti.classList.remove('active'));
+                    // 为当前点击的节点添加active类
+                    this.classList.add('active');
+
+                    const contentId = this.dataset.content;
+                    contents.forEach(content => {
+                        content.style.display = 'none';
+                    });
+                    document.getElementById(contentId).style.display = 'block';
+                });
+            });
+        </script>
+    </div>
+    <h1 id="h3">中国掐丝珐琅的发展现状</h1>
+    <div class="threebox">
+        <h3>掐丝珐琅起源于元朝，兴盛于明清，在如今呈现出多方面的发展现状：</h3>
+        <div class="threeboxb">
+            <div class="threeboxba">
+                <p> 1.传承与保护：已被列入国家级非物质文化遗产名录，受到政府和社会的重视。各地有许多传承人及相关企业致力于技艺传承，如安徽省工艺美术名人袁为祥创办公司、建设传习基地，挖掘保护铸胎掐丝珐琅制作技艺
+                    ；红山区铁南街道联合公司开展景泰蓝工艺制作免费培训，助力居民就业创业，也促进了技艺传承。</p>
+                <p>2.技术创新：与AI技术融合，在图案设计上，利用AI绘画工具几分钟就能生成创意图案，缩短设计周期，增添新元素风格；在工艺流程中，借助计算机视觉技术提高掐丝效率和质量，还能辅助上色环节自动匹配最佳颜色搭配。此外，像海派珐琅非遗传承人陈徐奇和工匠团队引进精密计算等前沿技术，提升作品稳定性和成品率。
+                </p>
+                <p>3.设计创新：融入现代设计理念，突破传统局限。不仅用于制作传统工艺品，还广泛应用于建筑装饰（如墙面装饰、屏风、灯具）、商务礼品、文创产品、生活实用品（如书签、笔筒、首饰盒）等领域。在时尚界，与珠宝、服装等结合，打造出时尚单品。
+                </p>
+                <p>4.教育普及：在教育领域被赋予新使命。部分学校开设以掐丝珐琅画为特色的校园课程，丰富美术课堂内容，培养学生文化自信、民族自豪感、动手能力和创新思维。</p>
+                <p>5.市场与受众：不再局限于宫廷，而是走进日常生活，成为时尚与艺术结合体，为生活增添艺术气息，受到不同消费群体喜爱。其产品既面向收藏市场，满足对高端艺术品有需求的藏家；也有适合大众消费的文创和实用产品，受众范围不断扩大。
+                </p>
+            </div>
+            <div>
+                <img src="../images/历史发展/发展现状.jpg" alt="">
+                <img src="../images/历史发展/发展现状02.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../images/首页/纹样4.png">
+        </div>
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

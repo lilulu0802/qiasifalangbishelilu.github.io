@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珐琅文创——服饰系列</title>
+    <link rel="stylesheet" href="../../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../../css/gewuchuanxin/page.css">
+    <link rel="stylesheet" href="../../js/script.js">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../../images/背景纹理03.jpg);
+        }
+
+        .boxone {
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, #517fa4, #243949)
+        }
+
+        .card {
+            /* 相对定位 */
+            position: relative;
+            width: 300px;
+            height: 450px;
+            margin: 20px;
+            background-color: #758a99;
+            border-radius: 20px;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 弹性布局 */
+            display: flex;
+            /* 元素纵向排列 */
+            flex-direction: column;
+            /* 居中 */
+            align-items: center;
+            color: #fff;
+            /* 阴影 */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            /* 不让其被挤压 */
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="../lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="../lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="../lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="../falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="../falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="../falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="../falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="../falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="../falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="../wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="../wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="../wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="../ziyuan.html#h1">展览</a></li>
+                        <li><a href="../ziyuan.html#h2">影音</a></li>
+                        <li><a href="../ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="../xueshu.html#h1">论坛</a></li>
+                        <li><a href="../xueshu.html#h2">调研</a></li>
+                        <li><a href="../xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../../index.html">首页</a>
+        <i>></i>
+        <a href="../../sub/gewuchuangxin.html">格物创新</a>
+        <i>></i>
+        <a href="../../sub/gewuchuanxin/page1.html">珐琅文创服饰系列</a>
+    </section>
+    <div class="box">
+        <h1>十二花神系列掐丝珐琅——杏花服饰</h1>
+        <div class="boxone">
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/梅花01.jpg" alt=""></div>
+                <h3>金缕繁花・掐丝珐琅缀锦汉服</h3>
+                <p>服饰以明黄色为主色调。主体部位绣有色彩丰富的梅花图案，腰带上的圆形配饰采用掐丝珐琅工艺，边缘以金属丝掐出精致花纹轮廓，内部填色绘制花卉，色彩细腻，蓝、粉、金等色调相互映衬，整体营造出古典雅致又富丽堂皇的氛围。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/梅花02.jpg" alt=""></div>
+                <h3>绮梦花影・古典掐丝风汉服</h3>
+                <p>主体部分采用浓郁的蓝绿色面料，其上精心绣制着梅花。肩部、领口周围繁花簇拥，增添华丽感。衣袖部分以米白色为底，点缀蓝色花纹，袖口处蓝绿色与金色珐琅云纹纹样交织。腰间系着蓝绿与浅橙色丝带，整体设计融合刺绣与掐丝珐琅工艺元素，古典优雅，尽显东方美学。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/梅花03.jpg" alt=""></div>
+                <h3>蓝韵繁花・掐丝风华汉服</h3>
+                <p>服饰以清新的蓝色为主色调，上袄身绣有精美的梅花图案，肩部云肩设计，布满繁花刺绣，。腰间系着一条明黄色腰带，打成蝴蝶结样式，增添活泼感。下身是蓝色马面裙，细节处运用掐丝珐琅工艺元素，呈现出古典雅致又不失灵动的风格。
+                </p>
+            </div>
+        </div>
+        <h1>十二花神系列掐丝珐琅——梅花服饰</h1>
+        <div class="boxone a">
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/杏花01.jpg" alt=""></div>
+                <h3>粉蓝绮梦・掐丝雅韵汉服</h3>
+                <p>汉服上衣为粉白渐变，领口处有精致蕾丝桃花花纹，袖口绣有珐琅云纹。下裙由白色渐变至蓝色，腰部饰有精致花纹腰带，两侧垂挂着带有掐丝珐琅风格配饰的飘带，配饰以蓝、金为主色调，搭配流苏，灵动雅致。</p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/杏花02.jpg" alt=""></div>
+                <h3>杏枝粉韵・掐丝锦带汉服</h3>
+                <p>这件汉服上襦为米白色，以交领右衽设计呈现，其上绣有粉色花枝图案，灵动雅致。腰部系着一条蓝色腰带，腰带上装饰有多个圆形掐丝珐琅工艺饰品，饰品内杏花花卉图案色彩丰富，蓝、粉、金等色调相互映衬。</p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/杏花03.jpg" alt=""></div>
+                <h3>粉黛绮梦・雅韵汉服</h3>
+                <p>汉服裙身以细腻的丝线绣出精致杏花花卉图案，栩栩如生。外搭一件米白色对襟长衫，领口与袖口饰有珐琅边饰，边饰上点缀着精致小花刺绣，低调雅致。腰间系着一条浅绿色腰带，自然垂落的长带为整体造型增添灵动之感。
+                </p>
+            </div>
+        </div>
+        <h1>十二花神系列掐丝珐琅——桃花服饰</h1>
+        <div class="boxone b">
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/桃花01.jpg" alt=""></div>
+                <h3>锦花瑞韵・掐丝华裳汉服</h3>
+                <p>汉服以米白色为主色调，衣袖与衣身绣满桃花粉色花朵、蓝绿叶片。领口和衣襟边缘饰有多彩花卉纹样，腰间系着一条蓝绿色腰带，带有金色繁复花纹，搭配金色金属扣。腰带上垂挂的圆形金属配饰刻有文字，边缘点缀红色装饰，运用掐丝珐琅工艺，增添古典精致韵味。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/桃花02.jpg" alt=""></div>
+                <h3>蓝韵樱香・掐丝雅绣华服</h3>
+                <p>服饰以深邃的蓝绿色为底色，其上满布精致的桃花花卉刺绣，花朵色彩丰富，有粉色、红色等，搭配枝叶，生动鲜活。领口、衣襟及袖口以金色勾勒。腰间的金色腰带装饰极为繁复，雕刻有精美花纹，采用掐丝珐琅工艺，搭配的金色配饰与红色流苏，更添华丽庄重之感。
+                </p>
+            </div>
+            <div class="card">
+                <div class="photo"><img src="../../images/文创周边/桃花03.jpg" alt=""></div>
+                <h3>蓝绮樱梦・掐丝锦纹华裳</h3>
+                <p>这件服饰以浅蓝色为基调，面料质感丝滑。主体部分绣满粉嫩花朵与翠绿枝叶，花朵娇俏，枝叶灵动。领口与袖口边缘饰有黑色底纹的精致花纹，蓝、粉、金等色彩交织，采用掐丝珐琅工艺，呈现出立体华丽感。袖口处的金色书法文字，整体尽显古典雅致与精致华丽。
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../../images/首页/纹样4.png">
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

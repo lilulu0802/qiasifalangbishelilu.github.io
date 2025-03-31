@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珐琅制作</title>
+    <link rel="stylesheet" href="../font/font_4836137_i1yi25isbxp/iconfont.css">
+    <link rel="stylesheet" href="../css/falangzhizuo.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(../images/背景纹理03.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        </div>
+        <div class="header-top">
+            <div class="header-top-l">
+                <img src="../images/首页/纹样4.png" alt="">
+                <span>中国掐丝珐琅传承网</span>
+            </div>
+            <div class="header-top-r">
+                <div id="searchContainer">
+                    <input type="text" id="searchBox" placeholder="搜索..." />
+                    <i class="iconfont" id="searchIcon" onclick="toggleSearch()">&#xe61f;</i>
+                    <script>
+                        function toggleSearch() {
+                            const searchBox = document.getElementById('searchBox');
+                            searchBox.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+                <div class="datetime">
+                    <div class="relative">
+                        <div id="time-year" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-month" class="text">00</div>
+                        <div class="time-ltemp">-</div>
+                        <div id="time-day" class="text">00</div>
+                    </div>
+                    <script>
+                        function time() {
+                            var time = new Date();
+                            var year;
+                            var month;
+                            var day;
+                            year = time.getFullYear();
+                            month = time.getMonth();
+                            day = time.getDate();
+                            document.getElementById("time-year").innerHTML = year;
+                            document.getElementById("time-month").innerHTML = month + 1;
+                            document.getElementById("time-day").innerHTML = day;
+                            var temph = time.getHours();
+                        }
+                        window.setInterval("time()", 1000)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-bottom">
+            <ul class="nav">
+                <li class="li"><a href="../index.html" class="nav1">首页</a>
+                </li>
+                <li class="li"><a href="../sub/lishifazhan.html" class="nav2">历史发展</a>
+                    <ul class="u2" id="ul">
+                        <li><a href="lishifazhan.html#h3">起源与传入</a></li>
+                        <li><a href="lishifazhan.html#h2">发展历程</a></li>
+                        <li><a href="lishifazhan.html#h3">现代形式</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangzhizuo.html">珐琅制作</a>
+                    <ul class="u3" id="ul">
+                        <li><a href="falangzhizuo.html#h1">工艺流程</a></li>
+                        <li><a href="falangzhizuo.html#h2">视频介绍</a></li>
+                        <li><a href="falangzhizuo.html#h3">工艺特点</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/falangleibie.html" class="nav4">珐琅类别</a>
+                    <ul class="u4" id="ul">
+                        <li><a href="falangleibie.html#h1">珐琅类别</a></li>
+                        <li><a href="falangleibie.html#h2">纹样探索珐琅</a></li>
+                        <li><a href="falangleibie.html#h3">珐琅器鉴赏</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/wenhuachancheng.html" class="nav5">文化传承</a>
+                    <ul class="u5" id="ul">
+                        <li><a href="wenhuachancheng.html#h1">传承人介绍</a></li>
+                        <li><a href="wenhuachancheng.html#h2">传承价值</a></li>
+                        <li><a href="wenhuachancheng.html#h3">传承发展</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="../sub/gewuchuangxin.html" class="nav6">格物创新</a>
+                </li>
+                <li class="li"><a href="../sub/ziyuan.html" class="nav7">资源</a>
+                    <ul class="u7" id="ul">
+                        <li><a href="ziyuan.html#h1">展览</a></li>
+                        <li><a href="ziyuan.html#h2">影音</a></li>
+                        <li><a href="ziyuan.html#h3">图集</a></li>
+                    </ul>
+                </li>
+                <li class="li" id="ul"><a href="../sub/xueshu.html" class="nav8">学术</a>
+                    <ul class="u8">
+                        <li><a href="xueshu.html#h1">论坛</a></li>
+                        <li><a href="xueshu.html#h2">调研</a></li>
+                        <li><a href="xueshu.html#h3">访谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <a href="../index.html">首页</a>
+        <i>></i>
+        <a href="../sub/falangzhizuo.html">珐琅制作</a>
+    </section>
+    <div class="box">
+        <h1 id="h1">掐丝珐琅的制作工艺</h1>
+        <div class="flowchart">
+            <div class="step">
+                <h2>设计纸稿</h2>
+                <p>设计师设计胎图、丝工图纸、蓝图（点蓝的色稿），以备下一道工序应用。</p>
+            </div>
+            <div class="step">
+                <h2>胎型制作</h2>
+                <p>先将紫铜片按照图纸要求剪出各种不同形状，并用铁锤敲打成各种形状的铜胎</p>
+            </div>
+            <div class="step">
+                <h2>掐丝</h2>
+                <p>用镊子将压扁了的细紫铜丝掐、掰成各种精美的图案花纹，再蘸上白芨粘附在铜胎上，然后筛上银焊药，经900度的高温焙烧，将铜丝花纹牢牢地焊接在铜胎上。</p>
+            </div>
+            <div class="step">
+                <h2>黏丝</h2>
+                <p>粘丝掐丝师傅用镊子夹着掐好的扁铜丝，蘸上白芨糊，按照预先设计的图案纹饰，粘附到铜胎上。由于白芨见火即化，还需要在粘满铜丝的铜胎上筛一层银焊药粉，放在火里经900多度的高温焙烧，铜丝就牢牢地粘在铜胎上了。
+                </p>
+            </div>
+            <div class="step">
+                <h2>点蓝</h2>
+                <p>艺师把事先备好的珐琅釉料，依照图案所示的颜色，用由铜丝锤制成的小铲形工具，一铲铲地将珐琅釉料填充入焊好的铜丝纹饰框架中。</p>
+            </div>
+            <div class="step">
+                <h2>烧蓝</h2>
+                <p>将整个胎体填满色釉后，再拿到炉温大约800℃的高炉中用一些矿物石头作燃料烘烧，色釉由砂粒状固体熔化为液体，待冷却后成为固着在胎体上的绚丽的色釉。此时色釉低于铜丝高度，所以得再填一次色釉，再经烧结，一般要连续填四次，直至将纹样内填到与掐丝纹相平。
+                </p>
+            </div>
+            <div class="step">
+                <h2>磨光</h2>
+                <p>使用砂石、黄石、木炭等材料，手工逐次打磨，将釉面、丝线、底线、口线刮平磨亮，景泰蓝部分晶莹光亮。
+                </p>
+            </div>
+            <div class="step">
+                <h2>镀金</h2>
+                <p>为避免铜胎氧化生锈，在作品的口沿、圈足和隔线及外露的铜丝纹样上镀金，使之长久如新，更显庄重堂皇。
+                </p>
+            </div>
+        </div>
+        <h1 id="h2">视频工艺介绍</h1>
+        <div class="boxtwo">
+            <img src="../images/花纹 - 副本.png" alt="">
+            <video src="../video/02.mp4" controls width="70%" autoplay="autoplay" loop="loop"></video>
+            <img src="../images/花纹.png" alt="">
+        </div>
+        <h1 id="h3">中国掐丝珐琅工艺特点</h1>
+        <div class="boxthree">
+            <div class="boxthree-l">
+                <img src="../images/珐琅制作/10.jpg" alt="">
+                <p>大邑烧瓷轻且坚,
+                    <br>扣如哀玉锦城传。<br>
+                    --《又于韦处乞大邑瓷碗》唐·杜甫
+                </p>
+            </div>
+            <div class="boxthree-r">
+                <p>景泰蓝工艺不仅运用了青铜工艺，又吸收了瓷器工艺、传统绘画和雕刻技艺。可以说，是集冶金、铸造、绘画、窑业、雕、錾、锤等多种工艺为一体的复合性工艺
+                    过程，可谓集工艺之大成，因而有“一件景泰蓝，十箱官窑器”之说。</p>
+                <hr style="border: 0; border-top: 1px dashed #fff;">
+                <p>掐丝珐琅的图案设计精美复杂，通常以传统吉祥图案为主，如龙凤、花卉、云纹等，寓意美好。掐丝珐琅工艺勾勒出图案的轮廓，线条流畅及立体感强，填充的珐琅釉料进一步增强了图案的层次感和艺术效果。</p>
+                <a href="./falangzhizuopage.html">了解更多</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-a">
+            <a href="../sub/wangzhanditu.html">网站地图</a>|
+            <a href="../sub/guanyuzhongguoqiasifalang.html">关于中国掐丝珐琅</a>|
+            <a href="../sub/lianxiwomen.html">联系我们</a>|
+            <a href="../sub/banquan.html">版权与免责声明</a>
+        </p>
+        <p style="text-align: center;">Copyright&copy;2025&nbsp;中国非物质文化遗产·中国非遗掐丝珐琅传承网&nbsp;All Rights Reserved</p>
+        <div id="logo">
+            <img src="../images/首页/纹样4.png">
+        </div>
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">
+        返回顶部
+    </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

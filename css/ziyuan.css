@@ -1,0 +1,216 @@
+section {
+    width: 1200px;
+    margin: 30px auto 0;
+}
+
+section a {
+    color: #333;
+    text-decoration: none;
+    font-family: "宋体";
+    font-size: 16px;
+}
+
+section a:hover {
+    color: #b80233;
+}
+
+h1 {
+    font-family: 宋体;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+    color: #333;
+}
+
+h1::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-right: 30px;
+    background-image: url(../images/_祥云\ -\ 副本.png);
+    background-size: cover;
+}
+
+h1::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-image: url(../images/_祥云.png);
+    margin-left: 30px;
+    background-size: cover;
+}
+
+.boxonea {
+    width: 1200px;
+    height: 550px;
+    margin: 20px auto;
+    /* 弹性布局 水平排列 */
+    display: flex;
+    flex-direction: row;
+}
+
+.img-box {
+    width: 300px;
+    height: 550px;
+    overflow: hidden;
+    /* 加个动画过渡 */
+    transition: 0.3s;
+}
+
+.img-box h3 {
+    position: absolute;
+    writing-mode: vertical-lr;
+    margin: 20px;
+    color: #f1e8db;
+    font-family: 宋体;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    /*图片都是竖图，而容器是横向的，所以对图片做了以下处理，这里大家根据自己的图片进行调节即可 */
+    /* 对图片进行剪切，保留原始比例 */
+    object-fit: cover;
+    /* object-position属性一般与object-fit一起使用，用来设置元素的位置 */
+    object-position: 50% 20%;
+}
+
+/* 默认最后一张展开 */
+.img-box:nth-child(5) {
+    width: 600px;
+}
+
+/* 鼠标移入，图片展开 */
+.img-box:hover {
+    width: 600px;
+}
+
+.img-box:hover~.img-box:nth-child(5) {
+    width: 300px;
+}
+
+.img-box:nth-of-type(1) {
+    background-image: url(../images/资源/01.png);
+}
+
+.img-box:nth-of-type(2) {
+    background-image: url(../images/资源/02.png);
+}
+
+.img-box:nth-of-type(3) {
+    background-image: url(../images/资源/03.png);
+}
+
+.img-box:nth-of-type(4) {
+    background-image: url(../images/资源/05.png);
+}
+
+.img-box:nth-of-type(5) {
+    background-image: url(../images/资源/04.png);
+}
+
+.boxtwo {
+    width: 1200px;
+    height: 320px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/底纹13.png);
+    background-size: contain;
+}
+
+.boxtwo-l {
+    width: 550px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.boxtwo-l img {
+    width: 550px;
+    height: 320px;
+    transition: transform 1s ease-in-out;
+}
+.boxtwo-l img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.boxtwo-l img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.boxtwo-r {
+    height: 500px;
+    width: 600px;
+}
+
+.boxtwo-r ul {
+    height: 280px;
+    padding: 10px 50px 10px 10px;
+}
+
+.boxtwo-r li {
+    list-style: none;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px #c9c2c2 dashed;
+
+}
+
+.boxtwo-r a:hover {
+    color: #800425;
+    cursor: pointer;
+}
+
+.boxtwo-r a {
+    text-decoration: none;
+    color: #ede2d5;
+}
+
+.boxthree {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 20px auto 40px;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.card-bottom {
+    margin: 20px 10px;
+}
+
+.card-bottom:hover {
+    color: #b80233;
+    cursor: pointer;
+}
+
+.card time {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+video {
+    object-fit: cover;
+}
+
